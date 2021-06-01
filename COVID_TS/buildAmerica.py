@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt # plotting
 from tsmoothie.smoother import LowessSmoother # smoothing
 
 smoother = LowessSmoother(smooth_fraction=0.1, iterations=1)
-data = pd.read_csv("./time_series_covid_19_confirmed_US.csv")
+data = pd.read_csv("DATA/time_series_covid_19_confirmed_US.csv")
 byState = data.groupby("Province_State").sum()
 
 location_set = byState.iloc[:,0:5]
