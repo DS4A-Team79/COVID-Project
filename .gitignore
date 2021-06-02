@@ -127,3 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+nmatos/data/U.S._State_Gathering_Bans__2020.csv
