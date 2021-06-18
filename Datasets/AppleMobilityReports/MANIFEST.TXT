@@ -1,0 +1,7 @@
+CO_CARTO_driving_CO.csv (text/csv) 7997367 bytes.
+CO_CARTO_transit_CO.csv (text/csv) 2240424 bytes.
+CO_CARTO_walking_CO.csv (text/csv) 3006888 bytes.
+README.docx (application/vnd.openxmlformats-officedocument.wordprocessingml.document) 20329 bytes.
+State_US_driving.csv (text/csv) 169328 bytes.
+State_US_transit.csv (text/csv) 137167 bytes.
+State_US_walking.csv (text/csv) 169018 bytes.
