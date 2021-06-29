@@ -12,8 +12,7 @@ import plotly.express as px
 import pandas as pd
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-
-app = dash.JupyterDash(__name__, external_stylesheets=external_stylesheets)
+app = JupyterDash(__name__, external_stylesheets=external_stylesheets)
 
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
@@ -40,3 +39,31 @@ app.layout = html.Div(children=[
 
 if __name__ == '__main__':
     app.run_server(debug=True)
+    
+    
+# Build App
+# app = JupyterDash(__name__)
+# app.layout = html.Div([
+#     html.H1("JupyterDash Demo"),
+#     dcc.Graph(id='graph'),
+#     html.Label([
+#         "colorscale",
+#         dcc.Dropdown(
+#             id='colorscale-dropdown', clearable=False,
+#             value='plasma', options=[
+#                 {'label': c, 'value': c}
+#                 for c in px.colors.named_colorscales()
+#             ])
+#     ]),
+# ])
+# Define callback to update graph
+# @app.callback(
+#     Output('graph', 'figure'),
+#     [Input("colorscale-dropdown", "value")]
+# )
+# def update_figure(colorscale):
+#     return px.scatter(
+#         df, x="total_bill", y="tip", color="size",
+#         color_continuous_scale=colorscale,
+#         render_mode="webgl", title="Tips"
+#     )
