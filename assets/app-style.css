@@ -1,0 +1,52 @@
+/*for all layouts and views*/
+.container-page-content {
+    padding: 15px;
+    background-color: lightgray;
+}
+
+/*for the visualizations section*/
+.container-visualization-layout {
+    padding: 15px;
+    background-color: gray;
+}
+
+.card-visualization-layout {
+    padding: 10px;
+    margin: 10px;
+}
+
+.card-modal-btn {
+    padding: 0px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+/*         background-color:red; */
+    }
+    
+    .wrapper div:first-child{
+        order: 0;
+        margin-bottom: 10px;
+    }
+
+
+/*for the about us section*/
+.container-about-us-layout {
+    padding: 10px;
+    background-color: gray;
+    margin: 15px;
+}
+
+/*for the our journey section*/
+.container-our-journey-layout {
+    padding: 10px;
+    background-color: gray;
+    margin: 15px;
+}
+
+.container-geo-map {
+    
+}
