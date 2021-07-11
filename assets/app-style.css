@@ -1,18 +1,32 @@
 /*for all layouts and views*/
 .container-page-content {
     padding: 15px;
-    background-color: lightgray;
+}
+
+.primary-color {
+    background-color: #2260DD;
+    color: whitesmoke;
+}
+
+.secondary-color {
+    background-color: #4E80E4;
+    color: whitesmoke;
+}
+
+.invert-colors a:hover {
+    background-color: whitesmoke;
+    color: #4E80E4;
 }
 
 /*for the visualizations section*/
 .container-visualization-layout {
-    padding: 15px;
-    background-color: gray;
+    padding: 10px;
+/*     background-color: gray; */
 }
 
 .card-visualization-layout {
-    padding: 10px;
-    margin: 10px;
+/*     padding: 10px; */
+    margin-top: 15px;
 }
 
 .card-modal-btn {
@@ -24,29 +38,46 @@
     .wrapper {
         display: flex;
         flex-direction: column;
-/*         background-color:red; */
     }
     
-    .wrapper div:first-child{
+    .wrapper div:first-child {
         order: 0;
-        margin-bottom: 10px;
     }
-
+}
 
 /*for the about us section*/
-.container-about-us-layout {
+/* .container-about-us-layout {
     padding: 10px;
     background-color: gray;
     margin: 15px;
-}
+} */
 
 /*for the our journey section*/
-.container-our-journey-layout {
+/* .container-our-journey-layout {
     padding: 10px;
     background-color: gray;
     margin: 15px;
+} */
+
+.img-resizing {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
 }
 
-.container-geo-map {
-    
+.active-tab-our-journey {
+    color: #2260DD;
+    background-color: #4E80E4;
+    box-shadow: 0 0 10px whitesmoke;
+    padding-bottom: 1px;
+}
+
+.tab-label-our-journey {
+    color: whitesmoke;
+}
+
+.tab-our-journey a:hover {
+    color: whitesmoke;
+    background-color: #4E80E4;
 }

@@ -18,8 +18,8 @@ import pandas as pd
 # suppress_callback_exceptions=True
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
 server = app.server
-# assume you have a "long-form" data frame
-# see https://plotly.com/python/px-arguments/ for more options
+# see https://plotly.com/python/px-arguments/ for dataframe help with dash app
+    
     
     
 # Extra code, might help in the future

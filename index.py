@@ -9,16 +9,18 @@ from layouts.our_journey_layout import our_journey_layout
 from layouts.about_us_layout import about_us_layout
 import callbacks
 
-#Navbar components
+#Navbar components for all sections of the app
 app_locations = [
     'Visualizations',
     'Model',
     'Our Journey',
     'About Us',
+    'Home'
 ]
 
 nav_dropdown_menu = dbc.DropdownMenu(
     children=[
+        dbc.DropdownMenuItem(app_locations[4], href='\\'),
         dbc.DropdownMenuItem(app_locations[0], href='\\visualizations'),
         dbc.DropdownMenuItem(app_locations[1], href='\\models'),
         dbc.DropdownMenuItem(app_locations[2], href='\\our_journey'),
@@ -35,8 +37,9 @@ nav_dropdown_menu = dbc.DropdownMenu(
 
 button_github = dbc.Button(
     "Github Repo",
-    outline=True,
-    color="primary",
+    outline=False,
+#     color="primary",
+    className='secondary-color',
     href="https://github.com/DS4A-Team79/COVID-Project",
     id="github-link",
     style={"text-transform": "none"},
@@ -82,7 +85,7 @@ header = dbc.Navbar(
                 dbc.Collapse(
                     dbc.Nav([
                         dbc.NavItem(nav_dropdown_menu),
-                        dbc.NavItem(button_github),
+                        dbc.NavItem(button_github, className='invert-colors'),
                     ],
                         navbar=True,
                     ),
@@ -101,9 +104,27 @@ header = dbc.Navbar(
         fluid=True,
     ),
     dark=True,
-    color="dark",
+    color="#2260DD",
     sticky="top",
 )
+
+# for the index/home page, the first view
+index_layout = html.Div([
+    dbc.Jumbotron([
+        dbc.Container([
+            html.H1("Home Page", className="display-3"),
+            html.P(
+                "Whatever we want on the home page, if we want one at all. We can just talk about what our project is, but I'm thinking a home page isn't necessary",
+                className="lead",
+            ),
+        ],
+            fluid=True,
+        )
+    ],
+        fluid=True,
+    ),    
+])
+
 
 # updating the navbar location element
 @app.callback(
@@ -119,12 +140,14 @@ def display_navbar_page(pathname):
         return app_locations[2]
     elif pathname == '/about_us':
         return app_locations[3]
+    elif pathname == '/':
+        return app_locations[4]
     else:
         return 'IDK'
 
 # main layout of the app, may change because of the dropdown menu
 # don't modify this will nilly, implement any components first, then integrate it
-# through this function
+# into this part
 app.layout = html.Div([
     header,
     dcc.Location(id='url', refresh=False),
@@ -146,6 +169,8 @@ def display_page(pathname):
         return our_journey_layout
     elif pathname == '/about_us':
         return about_us_layout
+    elif pathname == '/':
+        return index_layout
     else:
         return '404'
     # You could also return a 404 "URL not found" page here

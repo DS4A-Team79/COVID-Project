@@ -17,25 +17,49 @@ import dash_bootstrap_components as dbc
 #     fluid=True,
 # ),    
 
-# experiment with dbc.Markdown, should make it easier to have text, images, etc all in one card body
+# use markdown for easier explaining in text and including code snippets
+early_stages_tab_content = [
+    dbc.Row([
+        dbc.Col('Some block of text'),
+        dbc.Col(html.Img(src='../assets/shocked_pikachu.jpg', className='img-resizing'), width=3)
+    ])
+]
+
+data_collection_tab_content = [
+    dbc.Row([
+        dbc.Col(html.Img(src='../assets/shocked_pikachu.jpg', className='img-resizing'), width=3),
+        dbc.Col('Some block of text'),
+    ])
+]
+
+eda_tab_content = [
+    dbc.Row([
+        dbc.Col(html.Img(src='../assets/shocked_pikachu.jpg', className='img-resizing'), width=3),
+        dbc.Col('Some block of text'),
+    ])
+]
+
+results_tab_content = [
+    dbc.Row([
+        dbc.Col('Some block of text'),
+        dbc.Col(html.Img(src='../assets/shocked_pikachu.jpg', className='img-resizing'), width=3)
+    ])
+]
 
 our_journey_card_tabs = dbc.Card([
     dbc.CardHeader(
         dbc.Tabs([
-            dbc.Tab(label='Early Stages', tab_id='our-journey-tab1'),
-            dbc.Tab(label='Data Collection', tab_id='our-journey-tab2'),
-            dbc.Tab(label='EDA (Exploratory Data Analysis)', tab_id='our-journey-tab3'),
-            dbc.Tab(label='Results', tab_id='our-journey-tab4'),
+            dbc.Tab(label='Early Stages', tab_id='our-journey-tab1', activeTabClassName='active-tab-our-journey', tabClassName='tab-our-journey', labelClassName='tab-label-our-journey',),
+            dbc.Tab(label='Data Collection', tab_id='our-journey-tab2', activeTabClassName='active-tab-our-journey', tabClassName='tab-our-journey', labelClassName='tab-label-our-journey',),
+            dbc.Tab(label='EDA (Exploratory Data Analysis)', tab_id='our-journey-tab3', activeTabClassName='active-tab-our-journey', tabClassName='tab-our-journey', labelClassName='tab-label-our-journey',),
+            dbc.Tab(label='Results', tab_id='our-journey-tab4', activeTabClassName='active-tab-our-journey', tabClassName='tab-our-journey', labelClassName='tab-label-our-journey'),
         ],
-            id='our-journey-card-tabs', card=True, active_tab='our-journey-tab1'
-        )
+            id='our-journey-card-tabs', card=True, active_tab='our-journey-tab1',
+        ), className='primary-color'
     ),
-    dbc.CardBody(html.P(id='our-journey-card-content', className='')),
+    dbc.CardBody(html.Div(id='our-journey-card-content', className=''), className='secondary-color'),
 ])
 
 our_journey_layout = html.Div([
     our_journey_card_tabs,
-    
 ])
-
-
