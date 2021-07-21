@@ -4,27 +4,36 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 
 from app import app
-from layouts.visualizations_layout import visualization_layout
+from layouts.overview_layout import overview_layout
+from layouts.relief_funding_layout import relief_funding_layout
+from layouts.demographics_layout import demographics_layout
+from layouts.policy_mandates_layout import policy_mandates_layout
 from layouts.our_journey_layout import our_journey_layout
 from layouts.about_us_layout import about_us_layout
 import callbacks
 
 #Navbar components for all sections of the app
 app_locations = [
-    'Visualizations',
+    'Home',
+    'The Problem',
     'Model',
+    'Relief Funding',
+    'Demographics',
+    'Policy Mandates',
     'Our Journey',
     'About Us',
-    'Home'
 ]
 
 nav_dropdown_menu = dbc.DropdownMenu(
     children=[
-        dbc.DropdownMenuItem(app_locations[4], href='\\'),
-        dbc.DropdownMenuItem(app_locations[0], href='\\visualizations'),
-        dbc.DropdownMenuItem(app_locations[1], href='\\models'),
-        dbc.DropdownMenuItem(app_locations[2], href='\\our_journey'),
-        dbc.DropdownMenuItem(app_locations[3], href='\\about_us'),
+        dbc.DropdownMenuItem(app_locations[0], href='\\'),
+        dbc.DropdownMenuItem(app_locations[1], href='\\overview'),
+        dbc.DropdownMenuItem(app_locations[2], href='\\model'),
+        dbc.DropdownMenuItem(app_locations[3], href='\\relief_funding'),
+        dbc.DropdownMenuItem(app_locations[4], href='\\demographics'),
+        dbc.DropdownMenuItem(app_locations[5], href='\\policy_mandates'),
+        dbc.DropdownMenuItem(app_locations[6], href='\\our_journey'),
+        dbc.DropdownMenuItem(app_locations[7], href='\\about_us'),
     ],
 #     direction="left",
     right=True,
@@ -132,16 +141,22 @@ index_layout = html.Div([
     [Input('url', 'pathname')]
 )
 def display_navbar_page(pathname):
-    if pathname == '/visualizations':
+    if pathname == '/':
         return app_locations[0]
+    if pathname == '/overview':
+        return app_locations[1]
 #     elif pathname == '\model':
-#         return model_layout
-    elif pathname == '/our_journey':
-        return app_locations[2]
-    elif pathname == '/about_us':
+#         return app_locations[2] 
+    elif pathname == '/relief_funding':
         return app_locations[3]
-    elif pathname == '/':
+    elif pathname == '/demographics':
         return app_locations[4]
+    elif pathname == '/policy_mandates':
+        return app_locations[5]
+    elif pathname == '/our_journey':
+        return app_locations[6]
+    elif pathname == '/about_us':
+        return app_locations[7]
     else:
         return 'IDK'
 
@@ -161,16 +176,22 @@ app.layout = html.Div([
 )
 
 def display_page(pathname):
-    if pathname == '/visualizations':
-        return visualization_layout
+    if pathname == '/':
+        return index_layout
+    if pathname == '/overview':
+        return overview_layout
 #     elif pathname == '\model':
-#         return model_layout
+#         return model_layout 
+    elif pathname == '/relief_funding':
+        return relief_funding_layout
+    elif pathname == '/demographics':
+        return demographics_layout
+    elif pathname == '/policy_mandates':
+        return policy_mandates_layout
     elif pathname == '/our_journey':
         return our_journey_layout
     elif pathname == '/about_us':
         return about_us_layout
-    elif pathname == '/':
-        return index_layout
     else:
         return '404'
     # You could also return a 404 "URL not found" page here

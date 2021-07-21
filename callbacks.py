@@ -37,46 +37,69 @@ app.callback(
     [Input('our-journey-card-tabs', 'active_tab')]
 )(tab_content)
 
-# modal callbacks for geospatial map and visualizations in the visualizations view (one callback for each modal)
+# modal callbacks for geospatial maps and visualizations in the visualizations view (one callback for each modal)
 def toggle_modal(n1, n2, is_open):
     if n1 or n2:
         return not is_open
     return is_open
 
+# for geo maps
 app.callback(
-    Output('modal-geo', 'is_open'),
-    [Input('open-modal-geo', 'n_clicks'), 
-    Input('close-modal-geo', 'n_clicks')],
-    [State('modal-geo', 'is_open')],
+    Output('modal-overview-geomap', 'is_open'),
+    [Input('open-modal-overview-geomap', 'n_clicks'), 
+    Input('close-modal-overview-geomap', 'n_clicks')],
+    [State('modal-overview-geomap', 'is_open')],
 )(toggle_modal)
 
 app.callback(
-    Output('modal-visualization1', 'is_open'),
-    [Input('open-modal-visualization1', 'n_clicks'), 
-    Input('close-modal-visualization1', 'n_clicks')],
-    [State('modal-visualization1', 'is_open')],
+    Output('modal-relief-geomap', 'is_open'),
+    [Input('open-modal-relief-geomap', 'n_clicks'), 
+    Input('close-modal-relief-geomap', 'n_clicks')],
+    [State('modal-relief-geomap', 'is_open')],
 )(toggle_modal)
 
 app.callback(
-    Output('modal-visualization2', 'is_open'),
-    [Input('open-modal-visualization2', 'n_clicks'), 
-    Input('close-modal-visualization2', 'n_clicks')],
-    [State('modal-visualization2', 'is_open')],
+    Output('modal-demographics-geomap', 'is_open'),
+    [Input('open-modal-demographics-geomap', 'n_clicks'), 
+    Input('close-modal-demographics-geomap', 'n_clicks')],
+    [State('modal-demographics-geomap', 'is_open')],
 )(toggle_modal)
 
 app.callback(
-    Output('modal-visualization3', 'is_open'),
-    [Input('open-modal-visualization3', 'n_clicks'), 
-    Input('close-modal-visualization3', 'n_clicks')],
-    [State('modal-visualization3', 'is_open')],
+    Output('modal-policy-geomap', 'is_open'),
+    [Input('open-modal-policy-geomap', 'n_clicks'), 
+    Input('close-modal-policy-geomap', 'n_clicks')],
+    [State('modal-policy-geomap', 'is_open')],
 )(toggle_modal)
 
-app.callback(
-    Output('modal-visualization4', 'is_open'),
-    [Input('open-modal-visualization4', 'n_clicks'), 
-    Input('close-modal-visualization4', 'n_clicks')],
-    [State('modal-visualization4', 'is_open')],
-)(toggle_modal)
+# for other visualizations
+# app.callback(
+#     Output('modal-visualization1', 'is_open'),
+#     [Input('open-modal-visualization1', 'n_clicks'), 
+#     Input('close-modal-visualization1', 'n_clicks')],
+#     [State('modal-visualization1', 'is_open')],
+# )(toggle_modal)
+
+# app.callback(
+#     Output('modal-visualization2', 'is_open'),
+#     [Input('open-modal-visualization2', 'n_clicks'), 
+#     Input('close-modal-visualization2', 'n_clicks')],
+#     [State('modal-visualization2', 'is_open')],
+# )(toggle_modal)
+
+# app.callback(
+#     Output('modal-visualization3', 'is_open'),
+#     [Input('open-modal-visualization3', 'n_clicks'), 
+#     Input('close-modal-visualization3', 'n_clicks')],
+#     [State('modal-visualization3', 'is_open')],
+# )(toggle_modal)
+
+# app.callback(
+#     Output('modal-visualization4', 'is_open'),
+#     [Input('open-modal-visualization4', 'n_clicks'), 
+#     Input('close-modal-visualization4', 'n_clicks')],
+#     [State('modal-visualization4', 'is_open')],
+# )(toggle_modal)
 
 # add callback for toggling the collapse on small screens
 def toggle_navbar_collapse(n, is_open):

@@ -26,7 +26,7 @@
 
 .card-visualization-layout {
 /*     padding: 10px; */
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .card-modal-btn {
@@ -42,6 +42,7 @@
     
     .wrapper div:first-child {
         order: 0;
+/*         width: 100%; */
     }
 }
 
