@@ -13,10 +13,34 @@ import plotly.express as px
 import pandas as pd
 # import json
 
-# external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+# external JavaScript files
+external_scripts = [
+    
+    {'type': 'text/javascript', 'src': 'https://public.tableau.com/javascripts/api/tableau-2.min.js'},
+#     {'src': 'https://prod-useast-b.online.tableau.com/javascripts/api/viz_v1.js'},
+#     {
+#         'src': 'https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.core.js',
+#         'integrity': 'sha256-Qqd/EfdABZUcAxjOkMi8eGEivtdTkh3b65xCZL4qAQA=',
+#         'crossorigin': 'anonymous'
+#     }
+]
+
+# external CSS stylesheets
+# external_stylesheets = [
+#     'https://codepen.io/chriddyp/pen/bWLwgP.css',
+#     {
+#         'href': 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
+#         'rel': 'stylesheet',
+#         'integrity': 'sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO',
+#         'crossorigin': 'anonymous'
+#     }
+# ]
+
 # app = JupyterDash(__name__, external_stylesheets=external_stylesheets)
 # suppress_callback_exceptions=True
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
+
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], external_scripts=external_scripts, suppress_callback_exceptions=True)
 server = app.server
 # see https://plotly.com/python/px-arguments/ for dataframe help with dash app
     
