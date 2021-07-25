@@ -1,4 +1,4 @@
-from dash.dependencies import Input, Output, State
+from dash.dependencies import ClientsideFunction, Input, Output, State
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
@@ -134,7 +134,6 @@ index_layout = html.Div([
     ),    
 ])
 
-
 # updating the navbar location element
 @app.callback(
     Output('navbar-location', 'children'),
@@ -159,7 +158,7 @@ def display_navbar_page(pathname):
         return app_locations[7]
     else:
         return 'IDK'
-
+    
 # main layout of the app, may change because of the dropdown menu
 # don't modify this will nilly, implement any components first, then integrate it
 # into this part

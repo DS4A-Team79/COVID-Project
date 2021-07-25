@@ -1,23 +1,8 @@
-from dash.dependencies import Input, Output, State
+from dash.dependencies import ClientsideFunction, Input, Output, State
 
 from layouts.our_journey_layout import early_stages_tab_content, data_collection_tab_content, eda_tab_content, results_tab_content
 
 from app import app
-
-# add callback for 
-# @app.callback(Output('page-content', 'children'),
-#               [Input('url', 'value')])
-
-# def display_page(pathname):
-#     return html.Div([
-#         html.H3('You are on page {}'.format(pathname))
-#     ])
-
-# callback for location shown in navbar
-# app.callback(
-#     Output('navbar-display-location', 'children'),
-#     Input('app')
-# )
 
 # callback for card tabs in our journey page
 def tab_content(active_tab):
@@ -43,7 +28,7 @@ def toggle_modal(n1, n2, is_open):
         return not is_open
     return is_open
 
-# for geo maps
+# for geo map modals showing the extra info we want it to show
 app.callback(
     Output('modal-overview-geomap', 'is_open'),
     [Input('open-modal-overview-geomap', 'n_clicks'), 
@@ -73,33 +58,62 @@ app.callback(
 )(toggle_modal)
 
 # for other visualizations
+# for the spinners in each layout
+# def load_tableau_maps(pathname):
+#     if pathname == '/policy_mandates':
+#         app.clientside_callback(
+#             ClientsideFunction(
+#                 namespace='clientsidePolicyMandates',
+#                 function_name='initPolicyMandatesMap',
+#             ),
+#             Output('tableauPolicyMandatesMap', 'children'),
+#             [Input('url', 'pathname')]
+#         )
+#     else:
+#         return 'idk';
+    
 # app.callback(
-#     Output('modal-visualization1', 'is_open'),
-#     [Input('open-modal-visualization1', 'n_clicks'), 
-#     Input('close-modal-visualization1', 'n_clicks')],
-#     [State('modal-visualization1', 'is_open')],
-# )(toggle_modal)
+#     Output('loadingTableauPolicyMandatesMap', 'children'),
+#     Input('url', 'pathname')
+# )(load_tableau_maps)
 
-# app.callback(
-#     Output('modal-visualization2', 'is_open'),
-#     [Input('open-modal-visualization2', 'n_clicks'), 
-#     Input('close-modal-visualization2', 'n_clicks')],
-#     [State('modal-visualization2', 'is_open')],
-# )(toggle_modal)
+# clientside callbacks responsible for calling the (java)scripts loading the tableau maps
+# i chose to use clientside callbacks because everytime we change the view, we need different visualizations to load, causing a lot of overhead
+app.clientside_callback(
+    ClientsideFunction(
+        namespace='clientsidePolicyMandates',
+        function_name='initPolicyMandatesMap',
+    ),
+    Output('tableauPolicyMandatesMap', 'children'),
+    [Input('url', 'pathname')]
+)
 
-# app.callback(
-#     Output('modal-visualization3', 'is_open'),
-#     [Input('open-modal-visualization3', 'n_clicks'), 
-#     Input('close-modal-visualization3', 'n_clicks')],
-#     [State('modal-visualization3', 'is_open')],
-# )(toggle_modal)
+app.clientside_callback(
+    ClientsideFunction(
+        namespace='clientsideReliefFunding',
+        function_name='initReliefFundingMap',
+    ),
+    Output('tableauReliefFundingMap', 'children'),
+    [Input('url', 'pathname')]
+)
 
-# app.callback(
-#     Output('modal-visualization4', 'is_open'),
-#     [Input('open-modal-visualization4', 'n_clicks'), 
-#     Input('close-modal-visualization4', 'n_clicks')],
-#     [State('modal-visualization4', 'is_open')],
-# )(toggle_modal)
+app.clientside_callback(
+    ClientsideFunction(
+        namespace='clientsideDemographics',
+        function_name='initDemographicsMap',
+    ),
+    Output('tableauDemographicsMap', 'children'),
+    [Input('url', 'pathname')]
+)
+
+app.clientside_callback(
+    ClientsideFunction(
+        namespace='clientsideOverview',
+        function_name='initOverviewMap',
+    ),
+    Output('tableauOverviewMap', 'children'),
+    [Input('url', 'pathname')]
+)  
 
 # add callback for toggling the collapse on small screens
 def toggle_navbar_collapse(n, is_open):

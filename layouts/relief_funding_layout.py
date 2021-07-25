@@ -20,9 +20,7 @@ geo_map = dbc.Row([
                     ]),
                     dbc.ModalFooter(dbc.Button('Close', id='close-modal-relief-geomap', className='sm-auto', n_clicks=0),)
                 ], id='modal-relief-geomap', is_open=False),
-                dbc.Row(
-                    dbc.Col("Where the actual map will go")
-                ),
+                html.Div(id='tableauReliefFundingMap'),
             ], className='secondary-color')
         ])
     ),

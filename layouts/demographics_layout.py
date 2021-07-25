@@ -20,9 +20,7 @@ geo_map = dbc.Row([
                     ]),
                     dbc.ModalFooter(dbc.Button('Close', id='close-modal-demographics-geomap', className='sm-auto', n_clicks=0),)
                 ], id='modal-demographics-geomap', is_open=False),
-                dbc.Row(
-                    dbc.Col("Where the actual map will go")
-                ),
+                html.Div(id='tableauDemographicsMap'),
             ], className='secondary-color')
         ])
     ),

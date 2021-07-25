@@ -20,11 +20,8 @@ geo_map = dbc.Row([
                     ]),
                     dbc.ModalFooter(dbc.Button('Close', id='close-modal-policy-geomap', className='sm-auto', n_clicks=0),)
                 ], id='modal-policy-geomap', is_open=False),
-                dbc.Row(
-#                     dbc.Col("Where the actual map will go")
-#                     html.Div(id='tableauViz', onload='initViz();')
-                    html.Iframe(id='tableauViz')
-                ),
+#                 html.Div(id='tableauPolicyMandatesMap'),
+                dbc.Container(id='tableauPolicyMandatesMap', fluid=True)
             ], className='secondary-color')
         ])
     ),

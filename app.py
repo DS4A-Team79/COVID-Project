@@ -18,12 +18,7 @@ import pandas as pd
 external_scripts = [
     
     {'type': 'text/javascript', 'src': 'https://public.tableau.com/javascripts/api/tableau-2.min.js'},
-#     {'src': 'https://prod-useast-b.online.tableau.com/javascripts/api/viz_v1.js'},
-#     {
-#         'src': 'https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.core.js',
-#         'integrity': 'sha256-Qqd/EfdABZUcAxjOkMi8eGEivtdTkh3b65xCZL4qAQA=',
-#         'crossorigin': 'anonymous'
-#     }
+
 ]
 
 # external CSS stylesheets
