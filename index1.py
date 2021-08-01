@@ -3,7 +3,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 
-from app import app
+from app import application
 from layouts.overview_layout import overview_layout
 from layouts.relief_funding_layout import relief_funding_layout
 from layouts.demographics_layout import demographics_layout
@@ -135,7 +135,7 @@ index_layout = html.Div([
 ])
 
 # updating the navbar location element
-@app.callback(
+@application.callback(
     Output('navbar-location', 'children'),
     [Input('url', 'pathname')]
 )
@@ -162,14 +162,14 @@ def display_navbar_page(pathname):
 # main layout of the app, may change because of the dropdown menu
 # don't modify this will nilly, implement any components first, then integrate it
 # into this part
-app.layout = html.Div([
+application.layout = html.Div([
     header,
     dcc.Location(id='url', refresh=False),
     dbc.Container(id='page-content', fluid=True, className='container-page-content'),
 ])
 
 # Update the layout of the app
-@app.callback(
+@application.callback(
     Output('page-content', 'children'),
     [Input('url', 'pathname')]
 )
@@ -196,4 +196,4 @@ def display_page(pathname):
     # You could also return a 404 "URL not found" page here
     
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    application.run_server(debug=False)
