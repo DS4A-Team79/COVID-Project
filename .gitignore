@@ -112,6 +112,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+aws_deployment/
 
 # Spyder project settings
 .spyderproject
