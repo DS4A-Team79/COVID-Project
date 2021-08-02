@@ -1,2 +1,0 @@
-Gather Bans Exploration
-	U.S._State_Gathering_Bans_2020.csv - https://drive.google.com/file/d/14Qzr2AhmU7noRugZtq_pG2eUli8la9uN/view?usp=sharing
