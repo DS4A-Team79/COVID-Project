@@ -21,20 +21,20 @@ import dash_bootstrap_components as dbc
 early_stages_tab_content = [
     dbc.Row([
         dbc.Col('Some block of text'),
-        dbc.Col(html.Img(src='../assets/shocked_pikachu.jpg', className='img-resizing'), width=3)
+        dbc.Col(html.Img(src='../static/shocked_pikachu.jpg', className='img-resizing'), width=3)
     ])
 ]
 
 data_collection_tab_content = [
     dbc.Row([
-        dbc.Col(html.Img(src='../assets/shocked_pikachu.jpg', className='img-resizing'), width=3),
+        dbc.Col(html.Img(src='../static/shocked_pikachu.jpg', className='img-resizing'), width=3),
         dbc.Col('Some block of text'),
     ])
 ]
 
 eda_tab_content = [
     dbc.Row([
-        dbc.Col(html.Img(src='../assets/shocked_pikachu.jpg', className='img-resizing'), width=3),
+        dbc.Col(html.Img(src='../static/shocked_pikachu.jpg', className='img-resizing'), width=3),
         dbc.Col('Some block of text'),
     ])
 ]
@@ -42,7 +42,7 @@ eda_tab_content = [
 results_tab_content = [
     dbc.Row([
         dbc.Col('Some block of text'),
-        dbc.Col(html.Img(src='../assets/shocked_pikachu.jpg', className='img-resizing'), width=3)
+        dbc.Col(html.Img(src='../static/shocked_pikachu.jpg', className='img-resizing'), width=3)
     ])
 ]
 

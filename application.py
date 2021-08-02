@@ -13,7 +13,7 @@ from layouts.demographics_layout import demographics_layout
 from layouts.policy_mandates_layout import policy_mandates_layout
 from layouts.our_journey_layout import our_journey_layout
 from layouts.about_us_layout import about_us_layout
-from main_dash import application
+from main_dash import app
 import callbacks
 
 
@@ -25,11 +25,12 @@ import callbacks
 
 # ]
 
-analytical_df = pd.read_csv('Datasets/Analytical_(w_States).csv', index_col=False).drop(['Unnamed: 0'], axis=1)
+# analytical_df = pd.read_csv('Datasets/Analytical_(w_States).csv', index_col=False).drop(['Unnamed: 0'], axis=1)
 
 # application = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], external_scripts=external_scripts, suppress_callback_exceptions=True)
-server = application.server
-application.scripts.config.server_locally = True
+server = app.server
+app.scripts.config.server_locally = True
+app.css.config.serve_locally = True
 
 #Navbar components for all sections of the app
 app_locations = [
@@ -154,7 +155,7 @@ index_layout = html.Div([
 ])
 
 # updating the navbar location element
-@application.callback(
+@app.callback(
     Output('navbar-location', 'children'),
     [Input('url', 'pathname')]
 )
@@ -181,14 +182,14 @@ def display_navbar_page(pathname):
 # main layout of the app, may change because of the dropdown menu
 # don't modify this will nilly, implement any components first, then integrate it
 # into this part
-application.layout = html.Div([
+app.layout = html.Div([
     header,
     dcc.Location(id='url', refresh=False),
     dbc.Container(id='page-content', fluid=True, className='container-page-content'),
 ])
 
 # Update the layout of the app
-@application.callback(
+@app.callback(
     Output('page-content', 'children'),
     [Input('url', 'pathname')]
 )
@@ -214,5 +215,7 @@ def display_page(pathname):
         return '404'
     # You could also return a 404 "URL not found" page here
     
+application = app.server
+    
 if __name__ == '__main__':
-    application.run_server(debug=False, port=8080)
+    application.run(debug=False, port=8080)
