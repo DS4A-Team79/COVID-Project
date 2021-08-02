@@ -1,14 +1,12 @@
 FROM python:3.8
-
 LABEL maintainer="Andy Celdo <andyceldo1@gmail.com>"
 
-WORKDIR /COVID-Project
-
 COPY requirements.txt /
-RUN pip3 install -r /requirements.txt
+RUN pip install -r /requirements.txt
 
+RUN mkdir /covid-project
+WORKDIR /covid-project
 COPY ./ ./
 
 EXPOSE 8050
-
 CMD ["python", "./application.py"]
