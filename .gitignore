@@ -112,6 +112,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+aws_deployment/
 
 # Spyder project settings
 .spyderproject
@@ -131,3 +132,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 nmatos/data/U.S._State_Gathering_Bans__2020.csv
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
