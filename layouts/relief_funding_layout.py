@@ -71,6 +71,26 @@ dropdown_2021 = dcc.Dropdown(
     style={'color': '#2A4083'}
 )
 
+graph_title_2020 = html.H1(
+    id='graph_title_2020',
+    children='',
+    style={
+        'textAlign': 'center',
+        'color': relief_funding_visualization_colors['text'],
+        'background-color': relief_funding_visualization_colors['background']
+    }
+)
+
+graph_title_2021 = html.H1(
+    id='graph_title_2021',
+    children='',
+    style={
+        'textAlign': 'center',
+        'color': relief_funding_visualization_colors['text'],
+        'background-color': relief_funding_visualization_colors['background']
+    }
+)
+
 geo_map = dbc.Row([
     dbc.Col(
         dbc.Card([
@@ -117,10 +137,8 @@ findings_row = dbc.Row([
                 ], justify='center')
             ], className='primary-color'),
             dbc.CardBody([
-                dcc.Graph(
-                    id='fundings_graph_2020',
-                    figure=per_state_fig_2020
-                ),
+                graph_title_2020,
+                dcc.Graph(id='fundings_graph_2020'),
                 dropdown_2020,
             ], className='secondary-color')
         ])
@@ -133,10 +151,8 @@ findings_row = dbc.Row([
                 ], justify='center')
             ], className='primary-color'),
             dbc.CardBody([
-                dcc.Graph(
-                    id='fundings_graph_2021',
-                    figure=per_state_fig_2021
-                ),
+                graph_title_2021,
+                dcc.Graph(id='fundings_graph_2021'),
                 dropdown_2021,
             ], className='secondary-color')
         ])
@@ -145,8 +161,8 @@ findings_row = dbc.Row([
         dbc.Card([
             dbc.CardHeader([
                 dbc.Row([
-                    dbc.Col(html.H4('Finding 3'), width='auto', align='start'), 
-                ], justify='between')
+                    dbc.Col(html.H4('Finding 3'), width='auto', align='center'), 
+                ], justify='center')
             ], className='primary-color'),
             dbc.CardBody([
                 'Load Visualization Here!',

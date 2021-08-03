@@ -5,17 +5,33 @@ from layouts.relief_funding_layout import per_state_fig_2020, per_capita_fig_202
 
 from main_dash import app
 
+top5_titles = [
+    "Top 5 Countries per Capita",
+    "Top 5 Countries per State"
+]
+
 # callbacks for relief funding dash visualizations
-def update_relief_funding(search_value):
-    if not search_value == 'rps':
-        return 
-    return [o for o in options if search_value in o["label"]]
+def update_relief_funding_2020(value):
+    if not value == 'rps':
+        return per_capita_fig_2020, top5_titles[0]
+    else:
+        return per_state_fig_2020, top5_titles[1]
 app.callback(
-    Output("dropdown-2020", "options"),
-    [Input("dropdown-2020", "search_value")],
-)(update_relief_funding)
+    [Output("fundings_graph_2020", "figure"),
+     Output("graph_title_2020", "children")],
+    [Input("dropdown_2020", "value")],
+)(update_relief_funding_2020)
 
-
+def update_relief_funding_2021(value):
+    if not value == 'rps':
+        return per_capita_fig_2021, top5_titles[0]
+    else:
+        return per_state_fig_2021, top5_titles[1]
+app.callback(
+    [Output("fundings_graph_2021", "figure"),
+     Output("graph_title_2021", "children")],
+    [Input("dropdown_2021", "value")],
+)(update_relief_funding_2021)
 
 # callback for card tabs in our journey page
 def tab_content(active_tab):

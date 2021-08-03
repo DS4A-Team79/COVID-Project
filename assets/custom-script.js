@@ -1,8 +1,11 @@
+var viz;
+
 //responsible for calling the tableau maps
 window.dash_clientside = Object.assign({}, window.dash_clientside, {
     clientsidePolicyMandates: {
         initPolicyMandatesMap: function () {
-            var viz;
+//             var viz;
+            viz.dispose();
             var vizContainer = document.getElementById("tableauPolicyMandatesMap"),    
             url = 'https://public.tableau.com/views/Covid-19Analysis-Gathering_Bans/BansperCounty',
             options = {
@@ -28,7 +31,8 @@ window.dash_clientside = Object.assign({}, window.dash_clientside, {
 window.dash_clientside = Object.assign({}, window.dash_clientside, {
     clientsideReliefFunding: {
         initReliefFundingMap: function () {
-            var viz;
+//             var viz;
+            viz.dispose();
             var vizContainer = document.getElementById("tableauReliefFundingMap"),    
             url = 'https://public.tableau.com/views/Covid-19_Analysis_Relief_Funding/ReliefFunding',
             options = {
@@ -46,9 +50,10 @@ window.dash_clientside = Object.assign({}, window.dash_clientside, {
 window.dash_clientside = Object.assign({}, window.dash_clientside, {
     clientsideDemographics: {
         initDemographicsMap: function () {
-            var viz;
+//             var viz;
+            viz.dispose();
             var vizContainer = document.getElementById("tableauDemographicsMap"),    
-            url = 'https://public.tableau.com/views/Covid-19Analysis-Gathering_Bans/BansperCounty',
+            url = 'https://public.tableau.com/views/Covid-19_Analysis_Relief_Funding/ReliefFunding',
             options = {
                 width: '100%',
                 height: '400px',
@@ -64,7 +69,8 @@ window.dash_clientside = Object.assign({}, window.dash_clientside, {
 window.dash_clientside = Object.assign({}, window.dash_clientside, {
     clientsideOverview: {
         initOverviewMap: function () {
-            var viz;
+//             var viz;
+            viz.dispose();
             var vizContainer = document.getElementById("tableauOverviewMap"),    
             url = 'https://public.tableau.com/views/Covid-19Analysis-Gathering_Bans/BansperCounty',
             options = {

@@ -207,8 +207,8 @@ def display_page(pathname):
         return '404'
     # You could also return a 404 "URL not found" page here
     
-application = app.server
+# application = app.server
     
 if __name__ == '__main__':
-    application.run(debug=True)
-#     application.run(debu=False, port=8080)
+    app.run_server(debug=True)
+#     application.run(debug=False, port=8080)
