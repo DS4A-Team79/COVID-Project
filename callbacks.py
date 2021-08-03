@@ -1,8 +1,21 @@
 from dash.dependencies import ClientsideFunction, Input, Output, State
 
 from layouts.our_journey_layout import early_stages_tab_content, data_collection_tab_content, eda_tab_content, results_tab_content
+from layouts.relief_funding_layout import per_state_fig_2020, per_capita_fig_2020, per_state_fig_2021, per_capita_fig_2021
 
-from main_dash import application
+from main_dash import app
+
+# callbacks for relief funding dash visualizations
+def update_relief_funding(search_value):
+    if not search_value == 'rps':
+        return 
+    return [o for o in options if search_value in o["label"]]
+app.callback(
+    Output("dropdown-2020", "options"),
+    [Input("dropdown-2020", "search_value")],
+)(update_relief_funding)
+
+
 
 # callback for card tabs in our journey page
 def tab_content(active_tab):
@@ -17,7 +30,7 @@ def tab_content(active_tab):
     else:
         return 'Error with loading content!'
     
-application.callback(
+app.callback(
     Output('our-journey-card-content', 'children'),
     [Input('our-journey-card-tabs', 'active_tab')]
 )(tab_content)
@@ -29,28 +42,28 @@ def toggle_modal(n1, n2, is_open):
     return is_open
 
 # for geo map modals showing the extra info we want it to show
-application.callback(
+app.callback(
     Output('modal-overview-geomap', 'is_open'),
     [Input('open-modal-overview-geomap', 'n_clicks'), 
     Input('close-modal-overview-geomap', 'n_clicks')],
     [State('modal-overview-geomap', 'is_open')],
 )(toggle_modal)
 
-application.callback(
+app.callback(
     Output('modal-relief-geomap', 'is_open'),
     [Input('open-modal-relief-geomap', 'n_clicks'), 
     Input('close-modal-relief-geomap', 'n_clicks')],
     [State('modal-relief-geomap', 'is_open')],
 )(toggle_modal)
 
-application.callback(
+app.callback(
     Output('modal-demographics-geomap', 'is_open'),
     [Input('open-modal-demographics-geomap', 'n_clicks'), 
     Input('close-modal-demographics-geomap', 'n_clicks')],
     [State('modal-demographics-geomap', 'is_open')],
 )(toggle_modal)
 
-application.callback(
+app.callback(
     Output('modal-policy-geomap', 'is_open'),
     [Input('open-modal-policy-geomap', 'n_clicks'), 
     Input('close-modal-policy-geomap', 'n_clicks')],
@@ -79,7 +92,7 @@ application.callback(
 
 # clientside callbacks responsible for calling the (java)scripts loading the tableau maps
 # i chose to use clientside callbacks because everytime we change the view, we need different visualizations to load, causing a lot of overhead
-application.clientside_callback(
+app.clientside_callback(
     ClientsideFunction(
         namespace='clientsidePolicyMandates',
         function_name='initPolicyMandatesMap',
@@ -88,7 +101,7 @@ application.clientside_callback(
     [Input('url', 'pathname')]
 )
 
-application.clientside_callback(
+app.clientside_callback(
     ClientsideFunction(
         namespace='clientsideReliefFunding',
         function_name='initReliefFundingMap',
@@ -97,7 +110,7 @@ application.clientside_callback(
     [Input('url', 'pathname')]
 )
 
-application.clientside_callback(
+app.clientside_callback(
     ClientsideFunction(
         namespace='clientsideDemographics',
         function_name='initDemographicsMap',
@@ -106,7 +119,7 @@ application.clientside_callback(
     [Input('url', 'pathname')]
 )
 
-application.clientside_callback(
+app.clientside_callback(
     ClientsideFunction(
         namespace='clientsideOverview',
         function_name='initOverviewMap',
@@ -121,7 +134,7 @@ def toggle_navbar_collapse(n, is_open):
         return not is_open
     return is_open
 
-application.callback(
+app.callback(
     Output("navbar-collapse", "is_open"),
     [Input("navbar-toggler", "n_clicks")],
     [State("navbar-collapse", "is_open")],

@@ -30,7 +30,7 @@ window.dash_clientside = Object.assign({}, window.dash_clientside, {
         initReliefFundingMap: function () {
             var viz;
             var vizContainer = document.getElementById("tableauReliefFundingMap"),    
-            url = 'https://public.tableau.com/views/Covid-19Analysis-Gathering_Bans/BansperCounty',
+            url = 'https://public.tableau.com/views/Covid-19_Analysis_Relief_Funding/ReliefFunding',
             options = {
                 width: '100%',
                 height: '400px',

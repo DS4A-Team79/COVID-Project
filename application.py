@@ -17,7 +17,6 @@ from main_dash import app
 import callbacks
 
 
-
 # external JavaScript files
 # external_scripts = [
     
@@ -25,6 +24,7 @@ import callbacks
 
 # ]
 
+# application = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], external_scripts=external_scripts, suppress_callback_exceptions=True)
 server = app.server
 app.scripts.config.server_locally = True
 app.css.config.serve_locally = True
@@ -43,7 +43,6 @@ app_locations = [
 
 nav_dropdown_menu = dbc.DropdownMenu(
     children=[
-        # dbc.DropdownMenuItem(app_locations[0], href='\\'),
         dbc.DropdownMenuItem(app_locations[1], href='\\'),
 #         dbc.DropdownMenuItem(app_locations[2], href='\\model'),
         dbc.DropdownMenuItem(app_locations[3], href='\\relief_funding'),
@@ -159,8 +158,6 @@ index_layout = html.Div([
 def display_navbar_page(pathname):
     if pathname == '/':
         return app_locations[1]
-    # if pathname == '/overview':
-    #     return app_locations[1]
 #     elif pathname == '\model':
 #         return app_locations[2] 
     elif pathname == '/relief_funding':
@@ -171,10 +168,10 @@ def display_navbar_page(pathname):
         return app_locations[5]
     elif pathname == '/our_journey':
         return app_locations[6]
-    # elif pathname == '/about_us':
-    #     return app_locations[7]
+    elif pathname == '/about_us':
+        return app_locations[7]
     else:
-        return 'Not found'
+        return 'IDK'
     
 # main layout of the app, may change because of the dropdown menu
 # don't modify this will nilly, implement any components first, then integrate it
@@ -194,8 +191,6 @@ app.layout = html.Div([
 def display_page(pathname):
     if pathname == '/':
         return overview_layout
-    # if pathname == '/overview':
-    #     return overview_layout
 #     elif pathname == '\model':
 #         return model_layout 
     elif pathname == '/relief_funding':
@@ -211,8 +206,9 @@ def display_page(pathname):
     else:
         return '404'
     # You could also return a 404 "URL not found" page here
-
+    
 application = app.server
     
 if __name__ == '__main__':
-    application.run(debug=False, port=8080)
+    application.run(debug=True)
+#     application.run(debu=False, port=8080)
