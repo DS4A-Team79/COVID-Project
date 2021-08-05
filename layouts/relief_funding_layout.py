@@ -3,6 +3,7 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
+from layouts.tableau_line_graph import tableau_line_graph
 
 relief_funding_visualization_colors = {
     'background': '#2A4083',
@@ -71,7 +72,7 @@ dropdown_2021 = dcc.Dropdown(
     style={'color': '#2A4083'}
 )
 
-graph_title_2020 = html.H1(
+graph_title_2020 = html.H3(
     id='graph_title_2020',
     children='',
     style={
@@ -81,7 +82,7 @@ graph_title_2020 = html.H1(
     }
 )
 
-graph_title_2021 = html.H1(
+graph_title_2021 = html.H3(
     id='graph_title_2021',
     children='',
     style={
@@ -92,6 +93,7 @@ graph_title_2021 = html.H1(
 )
 
 geo_map = dbc.Row([
+    tableau_line_graph,
     dbc.Col(
         dbc.Card([
             dbc.CardHeader([    
@@ -111,21 +113,21 @@ geo_map = dbc.Row([
                 ], id='modal-relief-geomap', is_open=False),
                 html.Div(id='tableauReliefFundingMap'),
             ], className='secondary-color')
-        ])
+        ]), xs=12, sm=12, md=12, lg=12, xl=8
     ),
-    dbc.Col(
-         dbc.Card([
-            dbc.CardHeader([    
-                dbc.Row([
-                    dbc.Col(html.H4('Metric Used In Map'), align='start'),
-                ], className='card-modal-btn'),
-            ], className='primary-color'),
-            dbc.CardBody([
-                dbc.Row(
-                    dbc.Col("Extension of larger card")
-                ),
-            ], className='secondary-color')
-        ]), width = "auto")
+#     dbc.Col(
+#          dbc.Card([
+#             dbc.CardHeader([    
+#                 dbc.Row([
+#                     dbc.Col(html.H4('Metric Used In Map'), align='start'),
+#                 ], className='card-modal-btn'),
+#             ], className='primary-color'),
+#             dbc.CardBody([
+#                 dbc.Row(
+#                     dbc.Col("Extension of larger card")
+#                 ),
+#             ], className='secondary-color')
+#         ]), width = "auto")
 ], className='wrapper card-visualization-layout')
 
 findings_row = dbc.Row([
@@ -141,7 +143,7 @@ findings_row = dbc.Row([
                 dcc.Graph(id='fundings_graph_2020'),
                 dropdown_2020,
             ], className='secondary-color')
-        ])
+        ]), xs=12, sm=12, md=12, lg=6, xl=6
     ),
     dbc.Col(
         dbc.Card([
@@ -155,21 +157,21 @@ findings_row = dbc.Row([
                 dcc.Graph(id='fundings_graph_2021'),
                 dropdown_2021,
             ], className='secondary-color')
-        ])
+        ]), xs=12, sm=12, md=12, lg=6, xl=6
     ),
-    dbc.Col(
-        dbc.Card([
-            dbc.CardHeader([
-                dbc.Row([
-                    dbc.Col(html.H4('Finding 3'), width='auto', align='center'), 
-                ], justify='center')
-            ], className='primary-color'),
-            dbc.CardBody([
-                'Load Visualization Here!',
-            ], className='secondary-color')
-        ])
-    ),
-], className='wrapper')  
+#     dbc.Col(
+#         dbc.Card([
+#             dbc.CardHeader([
+#                 dbc.Row([
+#                     dbc.Col(html.H4('Finding 3'), width='auto', align='center'), 
+#                 ], justify='center')
+#             ], className='primary-color'),
+#             dbc.CardBody([
+#                 'Load Visualization Here!',
+#             ], className='secondary-color')
+#         ])
+#     ),
+], className='wrapper', align='around')  
 
 
 relief_funding_layout = html.Div([

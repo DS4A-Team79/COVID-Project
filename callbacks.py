@@ -144,6 +144,16 @@ app.clientside_callback(
     [Input('url', 'pathname')]
 )  
 
+# callback for tableau line graph
+app.clientside_callback(
+    ClientsideFunction(
+        namespace='clientsideTableauLineGraph',
+        function_name='initTableauLineGraph',
+    ),
+    Output('tableauLineGraph', 'children'),
+    [Input('url', 'pathname')]
+)
+
 # add callback for toggling the collapse on small screens
 def toggle_navbar_collapse(n, is_open):
     if n:

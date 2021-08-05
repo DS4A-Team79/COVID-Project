@@ -39,17 +39,18 @@
     padding: 5px;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 700px) {
     .wrapper {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     
     .wrapper div:first-child {
-        order: 0;
+        order: 0; */
 /*         width: 100%; */
-    }
-}
+/*     }
+} */
 
 /*for the about us section*/
 /* .container-about-us-layout {

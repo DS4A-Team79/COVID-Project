@@ -25,19 +25,19 @@ geo_map = dbc.Row([
             ], className='secondary-color')
         ])
     ),
-    dbc.Col(
-        dbc.Card([
-            dbc.CardHeader([    
-                dbc.Row([
-                    dbc.Col(html.H4('Metric Used In Map'), align='start'),
-                ], className='card-modal-btn'),
-            ], className='primary-color'),
-            dbc.CardBody([
-                dbc.Row(
-                    dbc.Col("Extension of larger card")
-                ),
-            ], className='secondary-color')
-        ]), width = "auto")
+#     dbc.Col(
+#         dbc.Card([
+#             dbc.CardHeader([    
+#                 dbc.Row([
+#                     dbc.Col(html.H4('Metric Used In Map'), align='start'),
+#                 ], className='card-modal-btn'),
+#             ], className='primary-color'),
+#             dbc.CardBody([
+#                 dbc.Row(
+#                     dbc.Col("Extension of larger card")
+#                 ),
+#             ], className='secondary-color')
+#         ]), width = "auto")
 ], className='wrapper card-visualization-layout')
 
 policy_mandates_layout = html.Div([

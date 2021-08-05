@@ -46,7 +46,7 @@ nav_dropdown_menu = dbc.DropdownMenu(
         dbc.DropdownMenuItem(app_locations[1], href='\\'),
 #         dbc.DropdownMenuItem(app_locations[2], href='\\model'),
         dbc.DropdownMenuItem(app_locations[3], href='\\relief_funding'),
-        dbc.DropdownMenuItem(app_locations[4], href='\\demographics'),
+        dbc.DropdownMenuItem(app_locations[4], href='\\demographics', disabled=True),
         dbc.DropdownMenuItem(app_locations[5], href='\\policy_mandates'),
         dbc.DropdownMenuItem(app_locations[6], href='\\our_journey'),
 #         dbc.DropdownMenuItem(app_locations[7], href='\\about_us'),
@@ -133,22 +133,24 @@ header = dbc.Navbar(
     sticky="top",
 )
 
+
+
 # for the index/home page, the first view
-index_layout = html.Div([
-    dbc.Jumbotron([
-        dbc.Container([
-            html.H1("Home Page", className="display-3"),
-            html.P(
-                "Whatever we want on the home page, if we want one at all. We can just talk about what our project is, but I'm thinking a home page isn't necessary",
-                className="lead",
-            ),
-        ],
-            fluid=True,
-        )
-    ],
-        fluid=True,
-    ),    
-])
+# index_layout = html.Div([
+#     dbc.Jumbotron([
+#         dbc.Container([
+#             html.H1("Home Page", className="display-3"),
+#             html.P(
+#                 "Whatever we want on the home page, if we want one at all. We can just talk about what our project is, but I'm thinking a home page isn't necessary",
+#                 className="lead",
+#             ),
+#         ],
+#             fluid=True,
+#         )
+#     ],
+#         fluid=True,
+#     ),    
+# ])
 
 # updating the navbar location element
 @app.callback(
@@ -168,8 +170,8 @@ def display_navbar_page(pathname):
         return app_locations[5]
     elif pathname == '/our_journey':
         return app_locations[6]
-    elif pathname == '/about_us':
-        return app_locations[7]
+#     elif pathname == '/about_us':
+#         return app_locations[7]
     else:
         return 'IDK'
     
@@ -179,7 +181,7 @@ def display_navbar_page(pathname):
 app.layout = html.Div([
     header,
     dcc.Location(id='url', refresh=False),
-    dbc.Container(id='page-content', fluid=True, className='container-page-content'),
+    dbc.Container(id='page-content', fluid=True, className='container-page-content', ),
 ])
 
 # Update the layout of the app
@@ -201,8 +203,8 @@ def display_page(pathname):
         return policy_mandates_layout
     elif pathname == '/our_journey':
         return our_journey_layout
-    elif pathname == '/about_us':
-        return about_us_layout
+#     elif pathname == '/about_us':
+#         return about_us_layout
     else:
         return '404'
     # You could also return a 404 "URL not found" page here
