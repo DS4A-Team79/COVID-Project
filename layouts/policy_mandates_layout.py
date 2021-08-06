@@ -1,8 +1,10 @@
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
+from layouts.tableau_line_graph import tableau_line_graph
 
 geo_map = dbc.Row([
+    tableau_line_graph,
     dbc.Col(
         dbc.Card([
             dbc.CardHeader([    
@@ -38,8 +40,26 @@ geo_map = dbc.Row([
 #                 ),
 #             ], className='secondary-color')
 #         ]), width = "auto")
-], className='wrapper card-visualization-layout')
+], className='card-visualization-layout')
+
+findings_row = dbc.Row([
+    dbc.Col(
+        dbc.Card([
+            dbc.CardBody([
+                html.Img(src='../assets/bans_per_county_seaborn.png', className='img-resizing', style={'width':'100%'})
+            ], className='secondary-color')
+        ]), xs=12, sm=12, md=12, lg=6, xl=6
+    ),
+    dbc.Col(
+        dbc.Card([
+            dbc.CardBody([
+                html.Img(src='../assets/bans_per_county.png', className='img-resizing', style={'width':'100%'})
+            ], className='secondary-color')
+        ]), xs=12, sm=12, md=12, lg=6, xl=6
+    ),
+], align='around')  
 
 policy_mandates_layout = html.Div([
     geo_map,
+    findings_row,
 ], className='container-visualization-layout')

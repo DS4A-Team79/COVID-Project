@@ -6,8 +6,8 @@ from layouts.relief_funding_layout import per_state_fig_2020, per_capita_fig_202
 from main_dash import app
 
 top5_titles = [
-    "Top 5 Countries per Capita",
-    "Top 5 Countries per State"
+    "Top 5 States Relief Funding per Capita",
+    "Top 5 States Relief Funding"
 ]
 
 # callbacks for relief funding dash visualizations

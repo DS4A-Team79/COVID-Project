@@ -39,6 +39,8 @@
     padding: 5px;
 }
 
+/*The CSS below was meant for resizing components for different screen sizes. It works, but the dash components have
+built-in options to resize components based on the screen size.*/
 /* @media screen and (max-width: 700px) {
     .wrapper {
         display: flex;
