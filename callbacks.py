@@ -1,8 +1,37 @@
 from dash.dependencies import ClientsideFunction, Input, Output, State
 
 from layouts.our_journey_layout import early_stages_tab_content, data_collection_tab_content, eda_tab_content, results_tab_content
+from layouts.relief_funding_layout import per_state_fig_2020, per_capita_fig_2020, per_state_fig_2021, per_capita_fig_2021
 
 from main_dash import app
+
+top5_titles = [
+    "Top 5 States Relief Funding per Capita",
+    "Top 5 States Relief Funding"
+]
+
+# callbacks for relief funding dash visualizations
+def update_relief_funding_2020(value):
+    if not value == 'rps':
+        return per_capita_fig_2020, top5_titles[0]
+    else:
+        return per_state_fig_2020, top5_titles[1]
+app.callback(
+    [Output("fundings_graph_2020", "figure"),
+     Output("graph_title_2020", "children")],
+    [Input("dropdown_2020", "value")],
+)(update_relief_funding_2020)
+
+def update_relief_funding_2021(value):
+    if not value == 'rps':
+        return per_capita_fig_2021, top5_titles[0]
+    else:
+        return per_state_fig_2021, top5_titles[1]
+app.callback(
+    [Output("fundings_graph_2021", "figure"),
+     Output("graph_title_2021", "children")],
+    [Input("dropdown_2021", "value")],
+)(update_relief_funding_2021)
 
 # callback for card tabs in our journey page
 def tab_content(active_tab):
@@ -114,6 +143,16 @@ app.clientside_callback(
     Output('tableauOverviewMap', 'children'),
     [Input('url', 'pathname')]
 )  
+
+# callback for tableau line graph
+app.clientside_callback(
+    ClientsideFunction(
+        namespace='clientsideTableauLineGraph',
+        function_name='initTableauLineGraph',
+    ),
+    Output('tableauLineGraph', 'children'),
+    [Input('url', 'pathname')]
+)
 
 # add callback for toggling the collapse on small screens
 def toggle_navbar_collapse(n, is_open):

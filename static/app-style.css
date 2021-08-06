@@ -39,7 +39,7 @@
     padding: 5px;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -47,9 +47,8 @@
     
     .wrapper div:first-child {
         order: 0;
-/*         width: 100%; */
     }
-}
+} */
 
 /*for the about us section*/
 /* .container-about-us-layout {

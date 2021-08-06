@@ -17,15 +17,12 @@ from main_dash import app
 import callbacks
 
 
-
 # external JavaScript files
 # external_scripts = [
     
 #     {'type': 'text/javascript', 'src': 'https://public.tableau.com/javascripts/api/tableau-2.min.js'},
 
 # ]
-
-# analytical_df = pd.read_csv('Datasets/Analytical_(w_States).csv', index_col=False).drop(['Unnamed: 0'], axis=1)
 
 # application = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], external_scripts=external_scripts, suppress_callback_exceptions=True)
 server = app.server
@@ -46,14 +43,13 @@ app_locations = [
 
 nav_dropdown_menu = dbc.DropdownMenu(
     children=[
-        dbc.DropdownMenuItem(app_locations[0], href='\\'),
-        dbc.DropdownMenuItem(app_locations[1], href='\\overview'),
-        dbc.DropdownMenuItem(app_locations[2], href='\\model'),
+        dbc.DropdownMenuItem(app_locations[1], href='\\'),
+#         dbc.DropdownMenuItem(app_locations[2], href='\\model'),
         dbc.DropdownMenuItem(app_locations[3], href='\\relief_funding'),
-        dbc.DropdownMenuItem(app_locations[4], href='\\demographics'),
+        dbc.DropdownMenuItem(app_locations[4], href='\\demographics', disabled=True),
         dbc.DropdownMenuItem(app_locations[5], href='\\policy_mandates'),
         dbc.DropdownMenuItem(app_locations[6], href='\\our_journey'),
-        dbc.DropdownMenuItem(app_locations[7], href='\\about_us'),
+#         dbc.DropdownMenuItem(app_locations[7], href='\\about_us'),
     ],
 #     direction="left",
     right=True,
@@ -137,22 +133,24 @@ header = dbc.Navbar(
     sticky="top",
 )
 
+
+
 # for the index/home page, the first view
-index_layout = html.Div([
-    dbc.Jumbotron([
-        dbc.Container([
-            html.H1("Home Page", className="display-3"),
-            html.P(
-                "Whatever we want on the home page, if we want one at all. We can just talk about what our project is, but I'm thinking a home page isn't necessary",
-                className="lead",
-            ),
-        ],
-            fluid=True,
-        )
-    ],
-        fluid=True,
-    ),    
-])
+# index_layout = html.Div([
+#     dbc.Jumbotron([
+#         dbc.Container([
+#             html.H1("Home Page", className="display-3"),
+#             html.P(
+#                 "Whatever we want on the home page, if we want one at all. We can just talk about what our project is, but I'm thinking a home page isn't necessary",
+#                 className="lead",
+#             ),
+#         ],
+#             fluid=True,
+#         )
+#     ],
+#         fluid=True,
+#     ),    
+# ])
 
 # updating the navbar location element
 @app.callback(
@@ -161,8 +159,6 @@ index_layout = html.Div([
 )
 def display_navbar_page(pathname):
     if pathname == '/':
-        return app_locations[0]
-    if pathname == '/overview':
         return app_locations[1]
 #     elif pathname == '\model':
 #         return app_locations[2] 
@@ -174,8 +170,8 @@ def display_navbar_page(pathname):
         return app_locations[5]
     elif pathname == '/our_journey':
         return app_locations[6]
-    elif pathname == '/about_us':
-        return app_locations[7]
+#     elif pathname == '/about_us':
+#         return app_locations[7]
     else:
         return 'IDK'
     
@@ -185,7 +181,7 @@ def display_navbar_page(pathname):
 app.layout = html.Div([
     header,
     dcc.Location(id='url', refresh=False),
-    dbc.Container(id='page-content', fluid=True, className='container-page-content'),
+    dbc.Container(id='page-content', fluid=True, className='container-page-content', ),
 ])
 
 # Update the layout of the app
@@ -196,8 +192,6 @@ app.layout = html.Div([
 
 def display_page(pathname):
     if pathname == '/':
-        return index_layout
-    if pathname == '/overview':
         return overview_layout
 #     elif pathname == '\model':
 #         return model_layout 
@@ -209,8 +203,8 @@ def display_page(pathname):
         return policy_mandates_layout
     elif pathname == '/our_journey':
         return our_journey_layout
-    elif pathname == '/about_us':
-        return about_us_layout
+#     elif pathname == '/about_us':
+#         return about_us_layout
     else:
         return '404'
     # You could also return a 404 "URL not found" page here
@@ -218,4 +212,5 @@ def display_page(pathname):
 application = app.server
     
 if __name__ == '__main__':
+#     app.run_server(debug=True)
     application.run(debug=False, port=8080)
