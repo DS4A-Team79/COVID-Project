@@ -1,0 +1,801 @@
+,Month,State,New Deaths
+1,2020-02,Alabama,0.0
+2,2020-03,Alabama,23.0
+3,2020-04,Alabama,249.0
+4,2020-05,Alabama,358.0
+5,2020-06,Alabama,320.0
+6,2020-07,Alabama,630.0
+7,2020-08,Alabama,602.0
+8,2020-09,Alabama,358.0
+9,2020-10,Alabama,427.0
+10,2020-11,Alabama,611.0
+11,2020-12,Alabama,1249.0
+12,2021-01,Alabama,2861.0
+13,2021-02,Alabama,2241.0
+14,2021-03,Alabama,625.0
+15,2021-04,Alabama,342.0
+16,2021-05,Alabama,17.0
+18,2020-02,Alaska,0.0
+19,2020-03,Alaska,3.0
+20,2020-04,Alaska,6.0
+21,2020-05,Alaska,1.0
+22,2020-06,Alaska,4.0
+23,2020-07,Alaska,9.0
+24,2020-08,Alaska,14.0
+25,2020-09,Alaska,19.0
+26,2020-10,Alaska,26.0
+27,2020-11,Alaska,40.0
+28,2020-12,Alaska,84.0
+29,2021-01,Alaska,56.0
+30,2021-02,Alaska,28.0
+31,2021-03,Alaska,23.0
+32,2021-04,Alaska,34.0
+33,2021-05,Alaska,0.0
+35,2020-02,Arizona,0.0
+36,2020-03,Arizona,25.0
+37,2020-04,Arizona,295.0
+38,2020-05,Arizona,587.0
+39,2020-06,Arizona,738.0
+40,2020-07,Arizona,2049.0
+41,2020-08,Arizona,1335.0
+42,2020-09,Arizona,621.0
+43,2020-10,Arizona,329.0
+44,2020-11,Arizona,660.0
+45,2020-12,Arizona,2225.0
+46,2021-01,Arizona,4256.0
+47,2021-02,Arizona,2860.0
+48,2021-03,Arizona,987.0
+49,2021-04,Arizona,357.0
+50,2021-05,Arizona,20.0
+52,2020-02,Arkansas,0.0
+53,2020-03,Arkansas,8.0
+54,2020-04,Arkansas,53.0
+55,2020-05,Arkansas,72.0
+56,2020-06,Arkansas,137.0
+57,2020-07,Arkansas,183.0
+58,2020-08,Arkansas,344.0
+59,2020-09,Arkansas,572.0
+60,2020-10,Arkansas,556.0
+61,2020-11,Arkansas,577.0
+62,2020-12,Arkansas,1174.0
+63,2021-01,Arkansas,1192.0
+64,2021-02,Arkansas,375.0
+65,2021-03,Arkansas,383.0
+66,2021-04,Arkansas,113.0
+67,2021-05,Arkansas,4.0
+69,2020-02,California,0.0
+70,2020-03,California,173.0
+71,2020-04,California,1856.0
+72,2020-05,California,2137.0
+73,2020-06,California,1908.0
+74,2020-07,California,3158.0
+75,2020-08,California,3829.0
+76,2020-09,California,2882.0
+77,2020-10,California,1795.0
+78,2020-11,California,1570.0
+79,2020-12,California,6824.0
+80,2021-01,California,15079.0
+81,2021-02,California,11624.0
+82,2021-03,California,6439.0
+83,2021-04,California,2804.0
+84,2021-05,California,-139.0
+86,2020-02,Colorado,0.0
+87,2020-03,Colorado,69.0
+88,2020-04,Colorado,708.0
+89,2020-05,Colorado,668.0
+90,2020-06,Colorado,245.0
+91,2020-07,Colorado,148.0
+92,2020-08,Colorado,107.0
+93,2020-09,Colorado,106.0
+94,2020-10,Colorado,234.0
+95,2020-11,Colorado,752.0
+96,2020-12,Colorado,1777.0
+97,2021-01,Colorado,826.0
+98,2021-02,Colorado,311.0
+99,2021-03,Colorado,156.0
+100,2021-04,Colorado,188.0
+101,2021-05,Colorado,9.0
+103,2020-02,Connecticut,0.0
+104,2020-03,Connecticut,69.0
+105,2020-04,Connecticut,2188.0
+106,2020-05,Connecticut,1687.0
+107,2020-06,Connecticut,378.0
+108,2020-07,Connecticut,110.0
+109,2020-08,Connecticut,33.0
+110,2020-09,Connecticut,43.0
+111,2020-10,Connecticut,108.0
+112,2020-11,Connecticut,404.0
+113,2020-12,Connecticut,975.0
+114,2021-01,Connecticut,1051.0
+115,2021-02,Connecticut,576.0
+116,2021-03,Connecticut,267.0
+117,2021-04,Connecticut,208.0
+118,2021-05,Connecticut,0.0
+120,2020-02,Delaware,0.0
+121,2020-03,Delaware,3.0
+122,2020-04,Delaware,209.0
+123,2020-05,Delaware,285.0
+124,2020-06,Delaware,69.0
+125,2020-07,Delaware,32.0
+126,2020-08,Delaware,19.0
+127,2020-09,Delaware,35.0
+128,2020-10,Delaware,83.0
+129,2020-11,Delaware,85.0
+130,2020-12,Delaware,241.0
+131,2021-01,Delaware,244.0
+132,2021-02,Delaware,117.0
+133,2021-03,Delaware,137.0
+134,2021-04,Delaware,66.0
+135,2021-05,Delaware,1.0
+137,2020-02,Florida,0.0
+138,2020-03,Florida,85.0
+139,2020-04,Florida,1183.0
+140,2020-05,Florida,1183.0
+141,2020-06,Florida,1054.0
+142,2020-07,Florida,3338.0
+143,2020-08,Florida,4344.0
+144,2020-09,Florida,3130.0
+145,2020-10,Florida,2444.0
+146,2020-11,Florida,1836.0
+147,2020-12,Florida,3076.0
+148,2021-01,Florida,4806.0
+149,2021-02,Florida,4373.0
+150,2021-03,Florida,2573.0
+151,2021-04,Florida,1736.0
+152,2021-05,Florida,107.0
+154,2020-02,Georgia,0.0
+155,2020-03,Georgia,111.0
+156,2020-04,Georgia,1021.0
+157,2020-05,Georgia,921.0
+158,2020-06,Georgia,752.0
+159,2020-07,Georgia,947.0
+160,2020-08,Georgia,1881.0
+161,2020-09,Georgia,1388.0
+162,2020-10,Georgia,958.0
+163,2020-11,Georgia,1473.0
+164,2020-12,Georgia,1482.0
+165,2021-01,Georgia,3264.0
+166,2021-02,Georgia,3097.0
+167,2021-03,Georgia,1760.0
+168,2021-04,Georgia,1135.0
+169,2021-05,Georgia,22.0
+171,2020-02,Hawaii,0.0
+172,2020-03,Hawaii,0.0
+173,2020-04,Hawaii,16.0
+174,2020-05,Hawaii,1.0
+175,2020-06,Hawaii,1.0
+176,2020-07,Hawaii,8.0
+177,2020-08,Hawaii,44.0
+178,2020-09,Hawaii,66.0
+179,2020-10,Hawaii,83.0
+180,2020-11,Hawaii,25.0
+181,2020-12,Hawaii,44.0
+182,2021-01,Hawaii,122.0
+183,2021-02,Hawaii,29.0
+184,2021-03,Hawaii,24.0
+185,2021-04,Hawaii,20.0
+186,2021-05,Hawaii,0.0
+188,2020-02,Idaho,0.0
+189,2020-03,Idaho,8.0
+190,2020-04,Idaho,52.0
+191,2020-05,Idaho,22.0
+192,2020-06,Idaho,10.0
+193,2020-07,Idaho,96.0
+194,2020-08,Idaho,173.0
+195,2020-09,Idaho,108.0
+196,2020-10,Idaho,160.0
+197,2020-11,Idaho,300.0
+198,2020-12,Idaho,507.0
+199,2021-01,Idaho,289.0
+200,2021-02,Idaho,135.0
+201,2021-03,Idaho,102.0
+202,2021-04,Idaho,84.0
+203,2021-05,Idaho,0.0
+205,2020-02,Illinois,0.0
+206,2020-03,Illinois,99.0
+207,2020-04,Illinois,2256.0
+208,2020-05,Illinois,3035.0
+209,2020-06,Illinois,1533.0
+210,2020-07,Illinois,769.0
+211,2020-08,Illinois,543.0
+212,2020-09,Illinois,681.0
+213,2020-10,Illinois,1124.0
+214,2020-11,Illinois,2945.0
+215,2020-12,Illinois,4993.0
+216,2021-01,Illinois,3275.0
+217,2021-02,Illinois,1482.0
+218,2021-03,Illinois,844.0
+219,2021-04,Illinois,712.0
+220,2021-05,Illinois,67.0
+222,2020-02,Indiana,0.0
+223,2020-03,Indiana,112.0
+224,2020-04,Indiana,1049.0
+225,2020-05,Indiana,952.0
+226,2020-06,Indiana,456.0
+227,2020-07,Indiana,317.0
+228,2020-08,Indiana,377.0
+229,2020-09,Indiana,382.0
+230,2020-10,Indiana,859.0
+231,2020-11,Indiana,1928.0
+232,2020-12,Indiana,2958.0
+233,2021-01,Indiana,1906.0
+234,2021-02,Indiana,1277.0
+235,2021-03,Indiana,466.0
+236,2021-04,Indiana,293.0
+237,2021-05,Indiana,17.0
+239,2020-02,Iowa,0.0
+240,2020-03,Iowa,7.0
+241,2020-04,Iowa,155.0
+242,2020-05,Iowa,373.0
+243,2020-06,Iowa,181.0
+244,2020-07,Iowa,156.0
+245,2020-08,Iowa,248.0
+246,2020-09,Iowa,238.0
+247,2020-10,Iowa,358.0
+248,2020-11,Iowa,710.0
+249,2020-12,Iowa,1465.0
+250,2021-01,Iowa,1010.0
+251,2021-02,Iowa,570.0
+252,2021-03,Iowa,272.0
+253,2021-04,Iowa,207.0
+254,2021-05,Iowa,9.0
+256,2020-02,Kansas,0.0
+257,2020-03,Kansas,9.0
+258,2020-04,Kansas,125.0
+259,2020-05,Kansas,81.0
+260,2020-06,Kansas,58.0
+261,2020-07,Kansas,85.0
+262,2020-08,Kansas,93.0
+263,2020-09,Kansas,227.0
+264,2020-10,Kansas,351.0
+265,2020-11,Kansas,531.0
+266,2020-12,Kansas,1176.0
+267,2021-01,Kansas,1031.0
+268,2021-02,Kansas,925.0
+269,2021-03,Kansas,178.0
+270,2021-04,Kansas,75.0
+271,2021-05,Kansas,0.0
+273,2020-02,Kentucky,0.0
+274,2020-03,Kentucky,11.0
+275,2020-04,Kentucky,229.0
+276,2020-05,Kentucky,191.0
+277,2020-06,Kentucky,134.0
+278,2020-07,Kentucky,170.0
+279,2020-08,Kentucky,198.0
+280,2020-09,Kentucky,241.0
+281,2020-10,Kentucky,311.0
+282,2020-11,Kentucky,423.0
+283,2020-12,Kentucky,715.0
+284,2021-01,Kentucky,1122.0
+285,2021-02,Kentucky,892.0
+286,2021-03,Kentucky,1453.0
+287,2021-04,Kentucky,411.0
+288,2021-05,Kentucky,16.0
+290,2020-02,Louisiana,0.0
+291,2020-03,Louisiana,239.0
+292,2020-04,Louisiana,1666.0
+293,2020-05,Louisiana,886.0
+294,2020-06,Louisiana,430.0
+295,2020-07,Louisiana,728.0
+296,2020-08,Louisiana,1001.0
+297,2020-09,Louisiana,561.0
+298,2020-10,Louisiana,408.0
+299,2020-11,Louisiana,501.0
+300,2020-12,Louisiana,1068.0
+301,2021-01,Louisiana,1371.0
+302,2021-02,Louisiana,749.0
+303,2021-03,Louisiana,533.0
+304,2021-04,Louisiana,241.0
+305,2021-05,Louisiana,0.0
+307,2020-02,Maine,0.0
+308,2020-03,Maine,5.0
+309,2020-04,Maine,48.0
+310,2020-05,Maine,36.0
+311,2020-06,Maine,16.0
+312,2020-07,Maine,18.0
+313,2020-08,Maine,9.0
+314,2020-09,Maine,9.0
+315,2020-10,Maine,6.0
+316,2020-11,Maine,47.0
+317,2020-12,Maine,153.0
+318,2021-01,Maine,243.0
+319,2021-02,Maine,113.0
+320,2021-03,Maine,40.0
+321,2021-04,Maine,41.0
+322,2021-05,Maine,5.0
+324,2020-02,Maryland,0.0
+325,2020-03,Maryland,18.0
+326,2020-04,Maryland,1122.0
+327,2020-05,Maryland,1392.0
+328,2020-06,Maryland,658.0
+329,2020-07,Maryland,303.0
+330,2020-08,Maryland,262.0
+331,2020-09,Maryland,194.0
+332,2020-10,Maryland,198.0
+333,2020-11,Maryland,494.0
+334,2020-12,Maryland,1254.0
+335,2021-01,Maryland,1232.0
+336,2021-02,Maryland,742.0
+337,2021-03,Maryland,417.0
+338,2021-04,Maryland,458.0
+339,2021-05,Maryland,32.0
+341,2020-02,Massachusetts,0.0
+342,2020-03,Massachusetts,89.0
+343,2020-04,Massachusetts,3473.0
+344,2020-05,Massachusetts,3284.0
+345,2020-06,Massachusetts,1208.0
+346,2020-07,Massachusetts,555.0
+347,2020-08,Massachusetts,451.0
+348,2020-09,Massachusetts,396.0
+349,2020-10,Massachusetts,535.0
+350,2020-11,Massachusetts,757.0
+351,2020-12,Massachusetts,1675.0
+352,2021-01,Massachusetts,2154.0
+353,2021-02,Massachusetts,1541.0
+354,2021-03,Massachusetts,1067.0
+355,2021-04,Massachusetts,425.0
+356,2021-05,Massachusetts,11.0
+358,2020-02,Michigan,0.0
+359,2020-03,Michigan,292.0
+360,2020-04,Michigan,3699.0
+361,2020-05,Michigan,1740.0
+362,2020-06,Michigan,462.0
+363,2020-07,Michigan,257.0
+364,2020-08,Michigan,303.0
+365,2020-09,Michigan,330.0
+366,2020-10,Michigan,616.0
+367,2020-11,Michigan,1865.0
+368,2020-12,Michigan,3454.0
+369,2021-01,Michigan,2507.0
+370,2021-02,Michigan,983.0
+371,2021-03,Michigan,611.0
+372,2021-04,Michigan,1634.0
+373,2021-05,Michigan,140.0
+375,2020-02,Minnesota,0.0
+376,2020-03,Minnesota,12.0
+377,2020-04,Minnesota,331.0
+378,2020-05,Minnesota,707.0
+379,2020-06,Minnesota,426.0
+380,2020-07,Minnesota,164.0
+381,2020-08,Minnesota,226.0
+382,2020-09,Minnesota,223.0
+383,2020-10,Minnesota,422.0
+384,2020-11,Minnesota,1141.0
+385,2020-12,Minnesota,1730.0
+386,2021-01,Minnesota,886.0
+387,2021-02,Minnesota,283.0
+388,2021-03,Minnesota,375.0
+389,2021-04,Minnesota,311.0
+390,2021-05,Minnesota,16.0
+392,2020-02,Mississippi,0.0
+393,2020-03,Mississippi,20.0
+394,2020-04,Mississippi,241.0
+395,2020-05,Mississippi,473.0
+396,2020-06,Mississippi,339.0
+397,2020-07,Mississippi,590.0
+398,2020-08,Mississippi,810.0
+399,2020-09,Mississippi,496.0
+400,2020-10,Mississippi,365.0
+401,2020-11,Mississippi,473.0
+402,2020-12,Mississippi,980.0
+403,2021-01,Mississippi,1258.0
+404,2021-02,Mississippi,636.0
+405,2021-03,Mississippi,351.0
+406,2021-04,Mississippi,167.0
+407,2021-05,Mississippi,0.0
+409,2020-02,Missouri,0.0
+410,2020-03,Missouri,19.0
+411,2020-04,Missouri,425.0
+412,2020-05,Missouri,378.0
+413,2020-06,Missouri,207.0
+414,2020-07,Missouri,249.0
+415,2020-08,Missouri,292.0
+416,2020-09,Missouri,528.0
+417,2020-10,Missouri,957.0
+418,2020-11,Missouri,835.0
+419,2020-12,Missouri,1834.0
+420,2021-01,Missouri,1347.0
+421,2021-02,Missouri,1210.0
+422,2021-03,Missouri,572.0
+423,2021-04,Missouri,285.0
+424,2021-05,Missouri,10.0
+426,2020-02,Montana,0.0
+427,2020-03,Montana,5.0
+428,2020-04,Montana,11.0
+429,2020-05,Montana,1.0
+430,2020-06,Montana,5.0
+431,2020-07,Montana,38.0
+432,2020-08,Montana,44.0
+433,2020-09,Montana,76.0
+434,2020-10,Montana,195.0
+435,2020-11,Montana,306.0
+436,2020-12,Montana,280.0
+437,2021-01,Montana,272.0
+438,2021-02,Montana,124.0
+439,2021-03,Montana,80.0
+440,2021-04,Montana,134.0
+441,2021-05,Montana,3.0
+443,2020-02,Nebraska,0.0
+444,2020-03,Nebraska,3.0
+445,2020-04,Nebraska,67.0
+446,2020-05,Nebraska,100.0
+447,2020-06,Nebraska,104.0
+448,2020-07,Nebraska,58.0
+449,2020-08,Nebraska,65.0
+450,2020-09,Nebraska,81.0
+451,2020-10,Nebraska,174.0
+452,2020-11,Nebraska,366.0
+453,2020-12,Nebraska,633.0
+454,2021-01,Nebraska,269.0
+455,2021-02,Nebraska,162.0
+456,2021-03,Nebraska,98.0
+457,2021-04,Nebraska,64.0
+458,2021-05,Nebraska,1.0
+460,2020-02,Nevada,0.0
+461,2020-03,Nevada,26.0
+462,2020-04,Nevada,217.0
+463,2020-05,Nevada,174.0
+464,2020-06,Nevada,90.0
+465,2020-07,Nevada,323.0
+466,2020-08,Nevada,475.0
+467,2020-09,Nevada,295.0
+468,2020-10,Nevada,177.0
+469,2020-11,Nevada,367.0
+470,2020-12,Nevada,978.0
+471,2021-01,Nevada,1148.0
+472,2021-02,Nevada,687.0
+473,2021-03,Nevada,292.0
+474,2021-04,Nevada,215.0
+475,2021-05,Nevada,0.0
+477,2020-02,New Hampshire,0.0
+478,2020-03,New Hampshire,3.0
+479,2020-04,New Hampshire,69.0
+480,2020-05,New Hampshire,173.0
+481,2020-06,New Hampshire,126.0
+482,2020-07,New Hampshire,44.0
+483,2020-08,New Hampshire,17.0
+484,2020-09,New Hampshire,7.0
+485,2020-10,New Hampshire,44.0
+486,2020-11,New Hampshire,43.0
+487,2020-12,New Hampshire,233.0
+488,2021-01,New Hampshire,298.0
+489,2021-02,New Hampshire,113.0
+490,2021-03,New Hampshire,68.0
+491,2021-04,New Hampshire,65.0
+492,2021-05,New Hampshire,2.0
+494,2020-02,New Jersey,0.0
+495,2020-03,New Jersey,366.0
+496,2020-04,New Jersey,8371.0
+497,2020-05,New Jersey,4781.0
+498,2020-06,New Jersey,1517.0
+499,2020-07,New Jersey,784.0
+500,2020-08,New Jersey,126.0
+501,2020-09,New Jersey,177.0
+502,2020-10,New Jersey,228.0
+503,2020-11,New Jersey,643.0
+504,2020-12,New Jersey,2049.0
+505,2021-01,New Jersey,2442.0
+506,2021-02,New Jersey,1768.0
+507,2021-03,New Jersey,1309.0
+508,2021-04,New Jersey,993.0
+509,2021-05,New Jersey,46.0
+511,2020-02,New Mexico,0.0
+512,2020-03,New Mexico,4.0
+513,2020-04,New Mexico,119.0
+514,2020-05,New Mexico,233.0
+515,2020-06,New Mexico,141.0
+516,2020-07,New Mexico,145.0
+517,2020-08,New Mexico,137.0
+518,2020-09,New Mexico,98.0
+519,2020-10,New Mexico,141.0
+520,2020-11,New Mexico,550.0
+521,2020-12,New Mexico,909.0
+522,2021-01,New Mexico,806.0
+523,2021-02,New Mexico,433.0
+524,2021-03,New Mexico,221.0
+525,2021-04,New Mexico,130.0
+526,2021-05,New Mexico,0.0
+528,2020-02,New York,0.0
+529,2020-03,New York,2775.0
+530,2020-04,New York,21767.0
+531,2020-05,New York,6157.0
+532,2020-06,New York,1371.0
+533,2020-07,New York,605.0
+534,2020-08,New York,282.0
+535,2020-09,New York,367.0
+536,2020-10,New York,406.0
+537,2020-11,New York,895.0
+538,2020-12,New York,3358.0
+539,2021-01,New York,5651.0
+540,2021-02,New York,3981.0
+541,2021-03,New York,2684.0
+542,2021-04,New York,1959.0
+543,2021-05,New York,100.0
+545,2020-02,North Carolina,0.0
+546,2020-03,North Carolina,12.0
+547,2020-04,North Carolina,394.0
+548,2020-05,North Carolina,531.0
+549,2020-06,North Carolina,443.0
+550,2020-07,North Carolina,562.0
+551,2020-08,North Carolina,760.0
+552,2020-09,North Carolina,830.0
+553,2020-10,North Carolina,846.0
+554,2020-11,North Carolina,883.0
+555,2020-12,North Carolina,1487.0
+556,2021-01,North Carolina,2587.0
+557,2021-02,North Carolina,1877.0
+558,2021-03,North Carolina,900.0
+559,2021-04,North Carolina,539.0
+560,2021-05,North Carolina,0.0
+562,2020-02,North Dakota,0.0
+563,2020-03,North Dakota,3.0
+564,2020-04,North Dakota,16.0
+565,2020-05,North Dakota,42.0
+566,2020-06,North Dakota,18.0
+567,2020-07,North Dakota,24.0
+568,2020-08,North Dakota,40.0
+569,2020-09,North Dakota,103.0
+570,2020-10,North Dakota,278.0
+571,2020-11,North Dakota,409.0
+572,2020-12,North Dakota,366.0
+573,2021-01,North Dakota,148.0
+574,2021-02,North Dakota,28.0
+575,2021-03,North Dakota,23.0
+576,2021-04,North Dakota,25.0
+577,2021-05,North Dakota,2.0
+579,2020-02,Ohio,0.0
+580,2020-03,Ohio,90.0
+581,2020-04,Ohio,983.0
+582,2020-05,Ohio,1046.0
+583,2020-06,Ohio,466.0
+584,2020-07,Ohio,602.0
+585,2020-08,Ohio,699.0
+586,2020-09,Ohio,556.0
+587,2020-10,Ohio,850.0
+588,2020-11,Ohio,2741.0
+589,2020-12,Ohio,5476.0
+590,2021-01,Ohio,3645.0
+591,2021-02,Ohio,1336.0
+592,2021-03,Ohio,542.0
+593,2021-04,Ohio,156.0
+594,2021-05,Ohio,96.0
+596,2020-02,Oklahoma,0.0
+597,2020-03,Oklahoma,23.0
+598,2020-04,Oklahoma,199.0
+599,2020-05,Oklahoma,112.0
+600,2020-06,Oklahoma,53.0
+601,2020-07,Oklahoma,154.0
+602,2020-08,Oklahoma,259.0
+603,2020-09,Oklahoma,231.0
+604,2020-10,Oklahoma,306.0
+605,2020-11,Oklahoma,406.0
+606,2020-12,Oklahoma,746.0
+607,2021-01,Oklahoma,1058.0
+608,2021-02,Oklahoma,881.0
+609,2021-03,Oklahoma,525.0
+610,2021-04,Oklahoma,1835.0
+611,2021-05,Oklahoma,0.0
+613,2020-02,Oregon,0.0
+614,2020-03,Oregon,18.0
+615,2020-04,Oregon,85.0
+616,2020-05,Oregon,50.0
+617,2020-06,Oregon,54.0
+618,2020-07,Oregon,115.0
+619,2020-08,Oregon,137.0
+620,2020-09,Oregon,100.0
+621,2020-10,Oregon,130.0
+622,2020-11,Oregon,223.0
+623,2020-12,Oregon,565.0
+624,2021-01,Oregon,480.0
+625,2021-02,Oregon,251.0
+626,2021-03,Oregon,175.0
+627,2021-04,Oregon,112.0
+628,2021-05,Oregon,6.0
+630,2020-02,Pennsylvania,0.0
+631,2020-03,Pennsylvania,63.0
+632,2020-04,Pennsylvania,2412.0
+633,2020-05,Pennsylvania,3080.0
+634,2020-06,Pennsylvania,1094.0
+635,2020-07,Pennsylvania,558.0
+636,2020-08,Pennsylvania,452.0
+637,2020-09,Pennsylvania,471.0
+638,2020-10,Pennsylvania,670.0
+639,2020-11,Pennsylvania,1535.0
+640,2020-12,Pennsylvania,5612.0
+641,2021-01,Pennsylvania,5670.0
+642,2021-02,Pennsylvania,2350.0
+643,2021-03,Pennsylvania,1107.0
+644,2021-04,Pennsylvania,1118.0
+645,2021-05,Pennsylvania,45.0
+647,2020-02,Rhode Island,0.0
+648,2020-03,Rhode Island,11.0
+649,2020-04,Rhode Island,353.0
+650,2020-05,Rhode Island,463.0
+651,2020-06,Rhode Island,150.0
+652,2020-07,Rhode Island,49.0
+653,2020-08,Rhode Island,52.0
+654,2020-09,Rhode Island,47.0
+655,2020-10,Rhode Island,91.0
+656,2020-11,Rhode Island,199.0
+657,2020-12,Rhode Island,515.0
+658,2021-01,Rhode Island,411.0
+659,2021-02,Rhode Island,161.0
+660,2021-03,Rhode Island,117.0
+661,2021-04,Rhode Island,52.0
+662,2021-05,Rhode Island,0.0
+664,2020-02,South Carolina,0.0
+665,2020-03,South Carolina,22.0
+666,2020-04,South Carolina,222.0
+667,2020-05,South Carolina,250.0
+668,2020-06,South Carolina,245.0
+669,2020-07,South Carolina,973.0
+670,2020-08,South Carolina,1008.0
+671,2020-09,South Carolina,658.0
+672,2020-10,South Carolina,557.0
+673,2020-11,South Carolina,446.0
+674,2020-12,South Carolina,915.0
+675,2021-01,South Carolina,1746.0
+676,2021-02,South Carolina,1504.0
+677,2021-03,South Carolina,600.0
+678,2021-04,South Carolina,351.0
+679,2021-05,South Carolina,23.0
+681,2020-02,South Dakota,0.0
+682,2020-03,South Dakota,1.0
+683,2020-04,South Dakota,16.0
+684,2020-05,South Dakota,45.0
+685,2020-06,South Dakota,29.0
+686,2020-07,South Dakota,39.0
+687,2020-08,South Dakota,37.0
+688,2020-09,South Dakota,56.0
+689,2020-10,South Dakota,202.0
+690,2020-11,South Dakota,521.0
+691,2020-12,South Dakota,542.0
+692,2021-01,South Dakota,290.0
+693,2021-02,South Dakota,110.0
+694,2021-03,South Dakota,47.0
+695,2021-04,South Dakota,32.0
+696,2021-05,South Dakota,0.0
+698,2020-02,Tennessee,0.0
+699,2020-03,Tennessee,23.0
+700,2020-04,Tennessee,176.0
+701,2020-05,Tennessee,165.0
+702,2020-06,Tennessee,240.0
+703,2020-07,Tennessee,456.0
+704,2020-08,Tennessee,694.0
+705,2020-09,Tennessee,700.0
+706,2020-10,Tennessee,899.0
+707,2020-11,Tennessee,1249.0
+708,2020-12,Tennessee,2305.0
+709,2021-01,Tennessee,2743.0
+710,2021-02,Tennessee,1761.0
+711,2021-03,Tennessee,493.0
+712,2021-04,Tennessee,293.0
+713,2021-05,Tennessee,0.0
+715,2020-02,Texas,0.0
+716,2020-03,Texas,76.0
+717,2020-04,Texas,848.0
+718,2020-05,Texas,942.0
+719,2020-06,Texas,980.0
+720,2020-07,Texas,4811.0
+721,2020-08,Texas,5448.0
+722,2020-09,Texas,3183.0
+723,2020-10,Texas,2500.0
+724,2020-11,Texas,3483.0
+725,2020-12,Texas,5795.0
+726,2021-01,Texas,9008.0
+727,2021-02,Texas,6623.0
+728,2021-03,Texas,4555.0
+729,2021-04,Texas,1967.0
+730,2021-05,Texas,71.0
+732,2020-02,Utah,0.0
+733,2020-03,Utah,5.0
+734,2020-04,Utah,41.0
+735,2020-05,Utah,67.0
+736,2020-06,Utah,59.0
+737,2020-07,Utah,132.0
+738,2020-08,Utah,103.0
+739,2020-09,Utah,52.0
+740,2020-10,Utah,145.0
+741,2020-11,Utah,267.0
+742,2020-12,Utah,398.0
+743,2021-01,Utah,396.0
+744,2021-02,Utah,270.0
+745,2021-03,Utah,187.0
+746,2021-04,Utah,80.0
+747,2021-05,Utah,2.0
+749,2020-02,Vermont,0.0
+750,2020-03,Vermont,13.0
+751,2020-04,Vermont,36.0
+752,2020-05,Vermont,6.0
+753,2020-06,Vermont,1.0
+754,2020-07,Vermont,1.0
+755,2020-08,Vermont,1.0
+756,2020-09,Vermont,0.0
+757,2020-10,Vermont,0.0
+758,2020-11,Vermont,11.0
+759,2020-12,Vermont,67.0
+760,2021-01,Vermont,38.0
+761,2021-02,Vermont,30.0
+762,2021-03,Vermont,23.0
+763,2021-04,Vermont,19.0
+764,2021-05,Vermont,1.0
+766,2020-02,Virginia,0.0
+767,2020-03,Virginia,27.0
+768,2020-04,Virginia,525.0
+769,2020-05,Virginia,823.0
+770,2020-06,Virginia,388.0
+771,2020-07,Virginia,411.0
+772,2020-08,Virginia,406.0
+773,2020-09,Virginia,628.0
+774,2020-10,Virginia,446.0
+775,2020-11,Virginia,408.0
+776,2020-12,Virginia,970.0
+777,2021-01,Virginia,1432.0
+778,2021-02,Virginia,2088.0
+779,2021-03,Virginia,1700.0
+780,2021-04,Virginia,518.0
+781,2021-05,Virginia,21.0
+783,2020-02,Washington,1.0
+784,2020-03,Washington,224.0
+785,2020-04,Washington,611.0
+786,2020-05,Washington,287.0
+787,2020-06,Washington,180.0
+788,2020-07,Washington,300.0
+789,2020-08,Washington,309.0
+790,2020-09,Washington,188.0
+791,2020-10,Washington,245.0
+792,2020-11,Washington,417.0
+793,2020-12,Washington,699.0
+794,2021-01,Washington,824.0
+795,2021-02,Washington,671.0
+796,2021-03,Washington,291.0
+797,2021-04,Washington,252.0
+798,2021-05,Washington,0.0
+800,2020-02,West Virginia,0.0
+801,2020-03,West Virginia,1.0
+802,2020-04,West Virginia,40.0
+803,2020-05,West Virginia,34.0
+804,2020-06,West Virginia,18.0
+805,2020-07,West Virginia,23.0
+806,2020-08,West Virginia,99.0
+807,2020-09,West Virginia,140.0
+808,2020-10,West Virginia,104.0
+809,2020-11,West Virginia,276.0
+810,2020-12,West Virginia,603.0
+811,2021-01,West Virginia,686.0
+812,2021-02,West Virginia,276.0
+813,2021-03,West Virginia,376.0
+814,2021-04,West Virginia,3.0
+815,2021-05,West Virginia,7.0
+817,2020-02,Wisconsin,0.0
+818,2020-03,Wisconsin,43.0
+819,2020-04,Wisconsin,314.0
+820,2020-05,Wisconsin,293.0
+821,2020-06,Wisconsin,165.0
+822,2020-07,Wisconsin,163.0
+823,2020-08,Wisconsin,208.0
+824,2020-09,Wisconsin,216.0
+825,2020-10,Wisconsin,937.0
+826,2020-11,Wisconsin,1155.0
+827,2020-12,Wisconsin,1748.0
+828,2021-01,Wisconsin,1192.0
+829,2021-02,Wisconsin,580.0
+830,2021-03,Wisconsin,301.0
+831,2021-04,Wisconsin,235.0
+832,2021-05,Wisconsin,17.0
+834,2020-02,Wyoming,0.0
+835,2020-03,Wyoming,0.0
+836,2020-04,Wyoming,7.0
+837,2020-05,Wyoming,9.0
+838,2020-06,Wyoming,4.0
+839,2020-07,Wyoming,6.0
+840,2020-08,Wyoming,11.0
+841,2020-09,Wyoming,13.0
+842,2020-10,Wyoming,37.0
+843,2020-11,Wyoming,128.0
+844,2020-12,Wyoming,223.0
+845,2021-01,Wyoming,158.0
+846,2021-02,Wyoming,75.0
+847,2021-03,Wyoming,29.0
+848,2021-04,Wyoming,7.0
+849,2021-05,Wyoming,0.0
