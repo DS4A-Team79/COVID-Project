@@ -1,0 +1,1403 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0712.0907                               -->
+<workbook source-build='2021.2.1 (20212.21.0712.0907)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Analytical (w States)' inline='true' name='federated.0ef4kgg1neymtr12t70q50z5w83j' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Analytical (w States)' name='textscan.0sefla71o4bq1i197jwge11ldchv'>
+            <connection class='textscan' directory='C:/Users/drtrt/githubProjects/COVID-Project/Datasets' filename='Analytical_(w_States).csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0sefla71o4bq1i197jwge11ldchv' name='Analytical_(w_States).csv' table='[Analytical_(w_States)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Bans per county' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='string' name='Abbr' ordinal='3' />
+            <column datatype='integer' name='Max_new_cases' ordinal='4' />
+            <column datatype='integer' name='Total_cases' ordinal='5' />
+            <column datatype='integer' name='POPESTIMATE2019' ordinal='6' />
+            <column datatype='real' name='PERC_MALE' ordinal='7' />
+            <column datatype='real' name='PERC_FEMALE' ordinal='8' />
+            <column datatype='real' name='PERC_WHITE' ordinal='9' />
+            <column datatype='real' name='PERC_BLACK' ordinal='10' />
+            <column datatype='real' name='PERC_NATIVE' ordinal='11' />
+            <column datatype='real' name='PERC_ASIAN' ordinal='12' />
+            <column datatype='real' name='PERC_PACIFIC' ordinal='13' />
+            <column datatype='real' name='PERC_NOTHIS' ordinal='14' />
+            <column datatype='real' name='PERC_HIS' ordinal='15' />
+            <column datatype='real' name='PERC_UNDER_12' ordinal='16' />
+            <column datatype='real' name='PERC_UNDER_18' ordinal='17' />
+            <column datatype='real' name='PERC_UNDER_25' ordinal='18' />
+            <column datatype='real' name='PERC_UNDER_35' ordinal='19' />
+            <column datatype='real' name='PERC_UNDER_45' ordinal='20' />
+            <column datatype='real' name='PERC_UNDER_55' ordinal='21' />
+            <column datatype='real' name='PERC_UNDER_65' ordinal='22' />
+            <column datatype='real' name='PERC_UNDER_75' ordinal='23' />
+            <column datatype='real' name='PERC_OVER_75' ordinal='24' />
+            <column datatype='integer' name='Max_new_deaths' ordinal='25' />
+            <column datatype='integer' name='Total_deaths' ordinal='26' />
+            <column datatype='real' name='Total Funds for 2021 (in billions)' ordinal='27' />
+            <column datatype='real' name='Total Funds for 2020 (in billions)' ordinal='28' />
+            <column datatype='integer' name='Estimated Population (2019)' ordinal='29' />
+            <column datatype='real' name='Latitude (of Capital)' ordinal='30' />
+            <column datatype='real' name='Longitude (of Capital)' ordinal='31' />
+            <column datatype='real' name='Funds Per Person (2021)' ordinal='32' />
+            <column datatype='real' name='Funds Per Person (2020)' ordinal='33' />
+            <column datatype='real' name='Normalized Funds 2021' ordinal='34' />
+            <column datatype='real' name='Normalized Funds 2020' ordinal='35' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0sefla71o4bq1i197jwge11ldchv' name='Analytical_(w_States).csv' table='[Analytical_(w_States)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Bans per county' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='string' name='Abbr' ordinal='3' />
+            <column datatype='integer' name='Max_new_cases' ordinal='4' />
+            <column datatype='integer' name='Total_cases' ordinal='5' />
+            <column datatype='integer' name='POPESTIMATE2019' ordinal='6' />
+            <column datatype='real' name='PERC_MALE' ordinal='7' />
+            <column datatype='real' name='PERC_FEMALE' ordinal='8' />
+            <column datatype='real' name='PERC_WHITE' ordinal='9' />
+            <column datatype='real' name='PERC_BLACK' ordinal='10' />
+            <column datatype='real' name='PERC_NATIVE' ordinal='11' />
+            <column datatype='real' name='PERC_ASIAN' ordinal='12' />
+            <column datatype='real' name='PERC_PACIFIC' ordinal='13' />
+            <column datatype='real' name='PERC_NOTHIS' ordinal='14' />
+            <column datatype='real' name='PERC_HIS' ordinal='15' />
+            <column datatype='real' name='PERC_UNDER_12' ordinal='16' />
+            <column datatype='real' name='PERC_UNDER_18' ordinal='17' />
+            <column datatype='real' name='PERC_UNDER_25' ordinal='18' />
+            <column datatype='real' name='PERC_UNDER_35' ordinal='19' />
+            <column datatype='real' name='PERC_UNDER_45' ordinal='20' />
+            <column datatype='real' name='PERC_UNDER_55' ordinal='21' />
+            <column datatype='real' name='PERC_UNDER_65' ordinal='22' />
+            <column datatype='real' name='PERC_UNDER_75' ordinal='23' />
+            <column datatype='real' name='PERC_OVER_75' ordinal='24' />
+            <column datatype='integer' name='Max_new_deaths' ordinal='25' />
+            <column datatype='integer' name='Total_deaths' ordinal='26' />
+            <column datatype='real' name='Total Funds for 2021 (in billions)' ordinal='27' />
+            <column datatype='real' name='Total Funds for 2020 (in billions)' ordinal='28' />
+            <column datatype='integer' name='Estimated Population (2019)' ordinal='29' />
+            <column datatype='real' name='Latitude (of Capital)' ordinal='30' />
+            <column datatype='real' name='Longitude (of Capital)' ordinal='31' />
+            <column datatype='real' name='Funds Per Person (2021)' ordinal='32' />
+            <column datatype='real' name='Funds Per Person (2020)' ordinal='33' />
+            <column datatype='real' name='Normalized Funds 2021' ordinal='34' />
+            <column datatype='real' name='Normalized Funds 2020' ordinal='35' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bans per county</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bans per county]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Bans per county</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Abbr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Abbr]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Abbr</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_new_cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_new_cases]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Max_new_cases</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_cases]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Total_cases</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POPESTIMATE2019</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[POPESTIMATE2019]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>POPESTIMATE2019</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_MALE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_MALE]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_MALE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_FEMALE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_FEMALE]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_FEMALE</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_WHITE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_WHITE]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_WHITE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_BLACK</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_BLACK]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_BLACK</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_NATIVE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_NATIVE]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_NATIVE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_ASIAN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_ASIAN]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_ASIAN</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_PACIFIC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_PACIFIC]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_PACIFIC</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_NOTHIS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_NOTHIS]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_NOTHIS</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_HIS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_HIS]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_HIS</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_UNDER_12</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_UNDER_12]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_UNDER_12</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_UNDER_18</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_UNDER_18]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_UNDER_18</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_UNDER_25</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_UNDER_25]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_UNDER_25</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_UNDER_35</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_UNDER_35]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_UNDER_35</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_UNDER_45</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_UNDER_45]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_UNDER_45</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_UNDER_55</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_UNDER_55]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_UNDER_55</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_UNDER_65</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_UNDER_65]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_UNDER_65</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_UNDER_75</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_UNDER_75]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_UNDER_75</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PERC_OVER_75</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PERC_OVER_75]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>PERC_OVER_75</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_new_deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_new_deaths]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Max_new_deaths</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_deaths]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Total_deaths</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Funds for 2021 (in billions)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Funds for 2021 (in billions)]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Total Funds for 2021 (in billions)</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Funds for 2020 (in billions)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Funds for 2020 (in billions)]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Total Funds for 2020 (in billions)</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimated Population (2019)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Estimated Population (2019)]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Estimated Population (2019)</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude (of Capital)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude (of Capital)]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Latitude (of Capital)</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude (of Capital)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude (of Capital)]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Longitude (of Capital)</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Funds Per Person (2021)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Funds Per Person (2021)]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Funds Per Person (2021)</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Funds Per Person (2020)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Funds Per Person (2020)]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Funds Per Person (2020)</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Normalized Funds 2021</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Normalized Funds 2021]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Normalized Funds 2021</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Normalized Funds 2020</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Normalized Funds 2020]</local-name>
+            <parent-name>[Analytical_(w_States).csv]</parent-name>
+            <remote-alias>Normalized Funds 2020</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Avg' caption='Latitude (of Capital)1' datatype='real' name='[Latitude (of Capital)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude (of Capital)1' datatype='real' name='[Longitude (of Capital)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Max new cases' datatype='integer' name='[Max_new_cases]' role='measure' type='quantitative' />
+      <column caption='Max new deaths' datatype='integer' name='[Max_new_deaths]' role='measure' type='quantitative' />
+      <column caption='Perc Asian' datatype='real' name='[PERC_ASIAN]' role='measure' type='quantitative' />
+      <column caption='Perc Black' datatype='real' name='[PERC_BLACK]' role='measure' type='quantitative' />
+      <column caption='Perc Female' datatype='real' name='[PERC_FEMALE]' role='measure' type='quantitative' />
+      <column caption='Perc His' datatype='real' name='[PERC_HIS]' role='measure' type='quantitative' />
+      <column caption='Perc Male' datatype='real' name='[PERC_MALE]' role='measure' type='quantitative' />
+      <column caption='Perc Native' datatype='real' name='[PERC_NATIVE]' role='measure' type='quantitative' />
+      <column caption='Perc Nothis' datatype='real' name='[PERC_NOTHIS]' role='measure' type='quantitative' />
+      <column caption='Perc Over 75' datatype='real' name='[PERC_OVER_75]' role='measure' type='quantitative' />
+      <column caption='Perc Pacific' datatype='real' name='[PERC_PACIFIC]' role='measure' type='quantitative' />
+      <column caption='Perc Under 12' datatype='real' name='[PERC_UNDER_12]' role='measure' type='quantitative' />
+      <column caption='Perc Under 18' datatype='real' name='[PERC_UNDER_18]' role='measure' type='quantitative' />
+      <column caption='Perc Under 25' datatype='real' name='[PERC_UNDER_25]' role='measure' type='quantitative' />
+      <column caption='Perc Under 35' datatype='real' name='[PERC_UNDER_35]' role='measure' type='quantitative' />
+      <column caption='Perc Under 45' datatype='real' name='[PERC_UNDER_45]' role='measure' type='quantitative' />
+      <column caption='Perc Under 55' datatype='real' name='[PERC_UNDER_55]' role='measure' type='quantitative' />
+      <column caption='Perc Under 65' datatype='real' name='[PERC_UNDER_65]' role='measure' type='quantitative' />
+      <column caption='Perc Under 75' datatype='real' name='[PERC_UNDER_75]' role='measure' type='quantitative' />
+      <column caption='Perc White' datatype='real' name='[PERC_WHITE]' role='measure' type='quantitative' />
+      <column caption='Popestimate2019' datatype='integer' name='[POPESTIMATE2019]' role='measure' type='quantitative' />
+      <column caption='State1' datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total cases' datatype='integer' name='[Total_cases]' role='measure' type='quantitative' />
+      <column caption='Total deaths' datatype='integer' name='[Total_deaths]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Analytical_(w_States).csv' datatype='table' name='[__tableau_internal_object_id__].[Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/drtrt/OneDrive/Documents/My Tableau Repository/Datasources/covid_analysis_main_extract.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bans per county</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bans per county]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bans per county</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Abbr</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Abbr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Abbr</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Max_new_cases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Max_new_cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Max_new_cases</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_cases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_cases</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>POPESTIMATE2019</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[POPESTIMATE2019]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>POPESTIMATE2019</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_MALE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_MALE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_MALE</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_FEMALE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_FEMALE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_FEMALE</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_WHITE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_WHITE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_WHITE</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_BLACK</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_BLACK]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_BLACK</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_NATIVE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_NATIVE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_NATIVE</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_ASIAN</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_ASIAN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_ASIAN</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_PACIFIC</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_PACIFIC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_PACIFIC</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_NOTHIS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_NOTHIS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_NOTHIS</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_HIS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_HIS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_HIS</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_UNDER_12</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_UNDER_12]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_UNDER_12</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_UNDER_18</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_UNDER_18]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_UNDER_18</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_UNDER_25</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_UNDER_25]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_UNDER_25</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_UNDER_35</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_UNDER_35]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_UNDER_35</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_UNDER_45</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_UNDER_45]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_UNDER_45</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_UNDER_55</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_UNDER_55]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_UNDER_55</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_UNDER_65</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_UNDER_65]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_UNDER_65</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_UNDER_75</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_UNDER_75]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_UNDER_75</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PERC_OVER_75</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PERC_OVER_75]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PERC_OVER_75</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Max_new_deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Max_new_deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Max_new_deaths</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_deaths</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Funds for 2021 (in billions)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total Funds for 2021 (in billions)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Funds for 2021 (in billions)</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Funds for 2020 (in billions)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total Funds for 2020 (in billions)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Funds for 2020 (in billions)</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Estimated Population (2019)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Estimated Population (2019)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Estimated Population (2019)</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude (of Capital)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude (of Capital)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude (of Capital)</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude (of Capital)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude (of Capital)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude (of Capital)</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Funds Per Person (2021)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Funds Per Person (2021)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Funds Per Person (2021)</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Funds Per Person (2020)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Funds Per Person (2020)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Funds Per Person (2020)</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Normalized Funds 2021</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Normalized Funds 2021]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Normalized Funds 2021</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Normalized Funds 2020</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Normalized Funds 2020]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Normalized Funds 2020</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Analytical_(w_States).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Analytical_(w_States).csv' id='Analytical_(w_States).csv_F8AE4D11A2CF41348382695F5B14B2FF'>
+            <properties context=''>
+              <relation connection='textscan.0sefla71o4bq1i197jwge11ldchv' name='Analytical_(w_States).csv' table='[Analytical_(w_States)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Bans per county' ordinal='1' />
+                  <column datatype='string' name='State' ordinal='2' />
+                  <column datatype='string' name='Abbr' ordinal='3' />
+                  <column datatype='integer' name='Max_new_cases' ordinal='4' />
+                  <column datatype='integer' name='Total_cases' ordinal='5' />
+                  <column datatype='integer' name='POPESTIMATE2019' ordinal='6' />
+                  <column datatype='real' name='PERC_MALE' ordinal='7' />
+                  <column datatype='real' name='PERC_FEMALE' ordinal='8' />
+                  <column datatype='real' name='PERC_WHITE' ordinal='9' />
+                  <column datatype='real' name='PERC_BLACK' ordinal='10' />
+                  <column datatype='real' name='PERC_NATIVE' ordinal='11' />
+                  <column datatype='real' name='PERC_ASIAN' ordinal='12' />
+                  <column datatype='real' name='PERC_PACIFIC' ordinal='13' />
+                  <column datatype='real' name='PERC_NOTHIS' ordinal='14' />
+                  <column datatype='real' name='PERC_HIS' ordinal='15' />
+                  <column datatype='real' name='PERC_UNDER_12' ordinal='16' />
+                  <column datatype='real' name='PERC_UNDER_18' ordinal='17' />
+                  <column datatype='real' name='PERC_UNDER_25' ordinal='18' />
+                  <column datatype='real' name='PERC_UNDER_35' ordinal='19' />
+                  <column datatype='real' name='PERC_UNDER_45' ordinal='20' />
+                  <column datatype='real' name='PERC_UNDER_55' ordinal='21' />
+                  <column datatype='real' name='PERC_UNDER_65' ordinal='22' />
+                  <column datatype='real' name='PERC_UNDER_75' ordinal='23' />
+                  <column datatype='real' name='PERC_OVER_75' ordinal='24' />
+                  <column datatype='integer' name='Max_new_deaths' ordinal='25' />
+                  <column datatype='integer' name='Total_deaths' ordinal='26' />
+                  <column datatype='real' name='Total Funds for 2021 (in billions)' ordinal='27' />
+                  <column datatype='real' name='Total Funds for 2020 (in billions)' ordinal='28' />
+                  <column datatype='integer' name='Estimated Population (2019)' ordinal='29' />
+                  <column datatype='real' name='Latitude (of Capital)' ordinal='30' />
+                  <column datatype='real' name='Longitude (of Capital)' ordinal='31' />
+                  <column datatype='real' name='Funds Per Person (2021)' ordinal='32' />
+                  <column datatype='real' name='Funds Per Person (2020)' ordinal='33' />
+                  <column datatype='real' name='Normalized Funds 2021' ordinal='34' />
+                  <column datatype='real' name='Normalized Funds 2020' ordinal='35' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Bans per County'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Analytical (w States)' name='federated.0ef4kgg1neymtr12t70q50z5w83j' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ef4kgg1neymtr12t70q50z5w83j'>
+            <column datatype='integer' name='[Bans per county]' role='measure' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude (of Capital)1' datatype='real' name='[Latitude (of Capital)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude (of Capital)1' datatype='real' name='[Longitude (of Capital)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='State1' datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Latitude (of Capital)]' derivation='None' name='[none:Latitude (of Capital):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude (of Capital)]' derivation='None' name='[none:Longitude (of Capital):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Bans per county]' derivation='Sum' name='[sum:Bans per county:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Bans per county:qk]' />
+              <lod column='[federated.0ef4kgg1neymtr12t70q50z5w83j].[none:State:nk]' />
+              <geometry column='[federated.0ef4kgg1neymtr12t70q50z5w83j].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ef4kgg1neymtr12t70q50z5w83j].[none:Latitude (of Capital):qk]</rows>
+        <cols>[federated.0ef4kgg1neymtr12t70q50z5w83j].[none:Longitude (of Capital):qk]</cols>
+      </table>
+      <simple-id uuid='{1CE62744-4CF8-427F-A29E-832684A92C76}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Analytical (w States)' name='federated.0ef4kgg1neymtr12t70q50z5w83j' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ef4kgg1neymtr12t70q50z5w83j'>
+            <column datatype='integer' name='[Bans per county]' role='measure' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude (of Capital)1' datatype='real' name='[Latitude (of Capital)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude (of Capital)1' datatype='real' name='[Longitude (of Capital)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='State1' datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Latitude (of Capital)]' derivation='None' name='[none:Latitude (of Capital):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude (of Capital)]' derivation='None' name='[none:Longitude (of Capital):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Bans per county]' derivation='Sum' name='[sum:Bans per county:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Bans per county:qk]' />
+              <lod column='[federated.0ef4kgg1neymtr12t70q50z5w83j].[none:State:nk]' />
+              <geometry column='[federated.0ef4kgg1neymtr12t70q50z5w83j].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ef4kgg1neymtr12t70q50z5w83j].[none:Latitude (of Capital):qk]</rows>
+        <cols>[federated.0ef4kgg1neymtr12t70q50z5w83j].[none:Longitude (of Capital):qk]</cols>
+      </table>
+      <simple-id uuid='{03AB677D-6864-4A42-A19D-AFE56A7AE293}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (3)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>COVID-19 Data By State</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Analytical (w States)' name='federated.0ef4kgg1neymtr12t70q50z5w83j' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ef4kgg1neymtr12t70q50z5w83j'>
+            <column datatype='integer' name='[Bans per county]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Funds Per Person (2020)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Funds Per Person (2021)]' role='measure' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude (of Capital)1' datatype='real' name='[Latitude (of Capital)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude (of Capital)1' datatype='real' name='[Longitude (of Capital)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='State1' datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='real' name='[Total Funds for 2020 (in billions)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Total Funds for 2021 (in billions)]' role='measure' type='quantitative' />
+            <column-instance column='[Latitude (of Capital)]' derivation='None' name='[none:Latitude (of Capital):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude (of Capital)]' derivation='None' name='[none:Longitude (of Capital):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Bans per county]' derivation='Sum' name='[sum:Bans per county:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Funds Per Person (2020)]' derivation='Sum' name='[sum:Funds Per Person (2020):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Funds Per Person (2021)]' derivation='Sum' name='[sum:Funds Per Person (2021):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Funds for 2020 (in billions)]' derivation='Sum' name='[sum:Total Funds for 2020 (in billions):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Funds for 2021 (in billions)]' derivation='Sum' name='[sum:Total Funds for 2021 (in billions):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ef4kgg1neymtr12t70q50z5w83j].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Bans per county:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Funds Per Person (2020):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Funds Per Person (2021):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Total Funds for 2020 (in billions):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Total Funds for 2021 (in billions):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ef4kgg1neymtr12t70q50z5w83j].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ef4kgg1neymtr12t70q50z5w83j].[none:Longitude (of Capital):qk]' field-type='quantitative' max='34770264.96655114' min='19857721.176262237' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ef4kgg1neymtr12t70q50z5w83j].[none:Latitude (of Capital):qk]' field-type='quantitative' max='12219422.172013406' min='1459354.6015733667' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Total Funds for 2020 (in billions):qk]' palette='blue_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Total Funds for 2021 (in billions):qk]' palette='blue_teal_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Funds Per Person (2020):qk]' palette='blue_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Funds Per Person (2021):qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0ef4kgg1neymtr12t70q50z5w83j].[Multiple Values]' separate-domains='true' />
+              <geometry column='[federated.0ef4kgg1neymtr12t70q50z5w83j].[Geometry (generated)]' separate-domains='true' />
+              <lod column='[federated.0ef4kgg1neymtr12t70q50z5w83j].[none:State:nk]' separate-domains='true' />
+              <lod column='[federated.0ef4kgg1neymtr12t70q50z5w83j].[:Measure Names]' separate-domains='true' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ef4kgg1neymtr12t70q50z5w83j].[none:Latitude (of Capital):qk]</rows>
+        <cols>[federated.0ef4kgg1neymtr12t70q50z5w83j].[none:Longitude (of Capital):qk]</cols>
+      </table>
+      <simple-id uuid='{9A268001-DEEA-4760-8F32-1408EB9A6C69}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' name='Bans per County'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Bans per county:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{92AF3D6A-EE25-4FB0-8100-5EEA935E7353}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Bans per county:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F3DCC307-3CAF-4580-ACF3-3CC1A3408841}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 1 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='252'>
+            <card param='[federated.0ef4kgg1neymtr12t70q50z5w83j].[:Measure Names]' type='highlighter' />
+            <card pane-specification-id='0' param='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Bans per county:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Total Funds for 2020 (in billions):qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Total Funds for 2021 (in billions):qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Funds Per Person (2020):qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0ef4kgg1neymtr12t70q50z5w83j].[sum:Funds Per Person (2021):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{F78037C7-5B51-470D-8563-174F258E46A1}' />
+    </window>
+  </windows>
+</workbook>

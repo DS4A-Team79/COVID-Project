@@ -77,7 +77,7 @@ window.dash_clientside = Object.assign({}, window.dash_clientside, {
                 viz_overview.dispose();
             }
             var vizContainer = document.getElementById("tableauOverviewMap"),    
-            url = 'https://public.tableau.com/views/Covid-19Analysis-Gathering_Bans/BansperCounty',
+            url = 'https://public.tableau.com/views/Covid-19DataByState/Sheet13',
             options = {
                 width: '100%',
                 height: '500px',
