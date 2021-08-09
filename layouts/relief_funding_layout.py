@@ -11,10 +11,10 @@ relief_funding_visualization_colors = {
 }
 
 # dataframes, one for each visualization
-per_state_funding_2020_df = pd.read_csv('data/per_state_funding_2020.csv', index_col=False)
-per_capita_funding_2020_df = pd.read_csv('data/per_capita_funding_2020.csv', index_col=False)
-per_state_funding_2021_df = pd.read_csv('data/per_state_funding_2021.csv', index_col=False)
-per_capita_funding_2021_df = pd.read_csv('data/per_capita_funding_2021.csv', index_col=False)
+per_state_funding_2020_df = pd.read_csv('../data/per_state_funding_2020.csv', index_col=False)
+per_capita_funding_2020_df = pd.read_csv('../data/per_capita_funding_2020.csv', index_col=False)
+per_state_funding_2021_df = pd.read_csv('../data/per_state_funding_2021.csv', index_col=False)
+per_capita_funding_2021_df = pd.read_csv('../data/per_capita_funding_2021.csv', index_col=False)
 
 # creating a bar chart for each dataframe
 per_state_fig_2020 = px.bar(per_state_funding_2020_df, x="State", y="Total Funds for 2020 (in billions)", barmode="group")

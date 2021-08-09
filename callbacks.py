@@ -86,26 +86,6 @@ app.callback(
     [State('modal-policy-geomap', 'is_open')],
 )(toggle_modal)
 
-# for other visualizations
-# for the spinners in each layout
-# def load_tableau_maps(pathname):
-#     if pathname == '/policy_mandates':
-#         app.clientside_callback(
-#             ClientsideFunction(
-#                 namespace='clientsidePolicyMandates',
-#                 function_name='initPolicyMandatesMap',
-#             ),
-#             Output('tableauPolicyMandatesMap', 'children'),
-#             [Input('url', 'pathname')]
-#         )
-#     else:
-#         return 'idk';
-    
-# app.callback(
-#     Output('loadingTableauPolicyMandatesMap', 'children'),
-#     Input('url', 'pathname')
-# )(load_tableau_maps)
-
 # clientside callbacks responsible for calling the (java)scripts loading the tableau maps
 # i chose to use clientside callbacks because everytime we change the view, we need different visualizations to load, causing a lot of overhead
 app.clientside_callback(
