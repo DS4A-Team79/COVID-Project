@@ -98,16 +98,15 @@ geo_map = dbc.Row([
         dbc.Card([
             dbc.CardHeader([    
                 dbc.Row([
-                    dbc.Col(html.H4('Geospatial Map'), align='start'),
+                    dbc.Col(html.H4('COVID-19 Federal Funding Allocation By State'), align='start'),
                     dbc.Col(dbc.Button('?', id='open-modal-relief-geomap', n_clicks=0, color='info'), width=1, align='end')
                 ], className='card-modal-btn'),
             ], className='primary-color'),
             dbc.CardBody([
                 dbc.Modal([
-                    dbc.ModalHeader(html.B('Relief Funding Geospatial Map Modal'),),
+                    dbc.ModalHeader(html.B('Relief Funding Tableau Desktop Visualization'),),
                     dbc.ModalBody([
-                        html.P('Some Text'),
-                        html.P('Some more text'),
+                        html.P('Acquired Coronavirus State Fiscal Recovery Funds from the US Department of Treasury (for 2021). Also utilized a dataset outlining fiscal recovery funds by state by the CARES Act for 2020 and a dataset of estimated population in the US by state (for 2019).'),
                     ]),
                     dbc.ModalFooter(dbc.Button('Close', id='close-modal-relief-geomap', className='sm-auto', n_clicks=0),)
                 ], id='modal-relief-geomap', is_open=False),

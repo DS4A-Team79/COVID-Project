@@ -9,16 +9,15 @@ geo_map = dbc.Row([
         dbc.Card([
             dbc.CardHeader([    
                 dbc.Row([
-                    dbc.Col(html.H4('Geospatial Map of COVID-19 By State'), align='start'),
+                    dbc.Col(html.H4('COVID-19 Data By State'), align='start'),
                     dbc.Col(dbc.Button('?', id='open-modal-overview-geomap', n_clicks=0, color='info'), width=1, align='end')
                 ], className='card-modal-btn'),
             ], className='primary-color'),
             dbc.CardBody([
                 dbc.Modal([
-                    dbc.ModalHeader(html.B('GeoSpatial Map Modal'),),
+                    dbc.ModalHeader(html.B('GeoSpatial Map created using Tableau Desktop'),),
                     dbc.ModalBody([
-                        html.P('Some Text'),
-                        html.P('Some more text'),
+                        html.P('Explain her what data we used to create this visualization'),
                     ]),
                     dbc.ModalFooter(dbc.Button('Close', id='close-modal-overview-geomap', className='sm-auto', n_clicks=0),)
                 ], id='modal-overview-geomap', is_open=False),
@@ -44,48 +43,51 @@ geo_map = dbc.Row([
 findings_row = dbc.Row([
     dbc.Col(
         dbc.Card([
-            dbc.CardHeader([
-                dbc.Row([
-                    dbc.Col(html.H4('Finding 1'), width='auto', align='start')
-                ], justify='between')
-            ], className='primary-color'),
             dbc.CardBody([
-                'Load Visualization Here!',
+                html.Img(src='../assets/estimated_pop_by_state.png', className='img-resizing', style={'width':'100%'})
             ], className='secondary-color')
-        ])
+        ]), xs=12, sm=12, md=12, lg=12, xl=6
     ),
+    dbc.Col(
+        dbc.Card([
+            dbc.CardBody([
+                html.Img(src='../assets/max_new_cases_state.png', className='img-resizing', style={'width':'100%'})
+            ], className='secondary-color')
+        ]), xs=12, sm=12, md=12, lg=12, xl=6
+    ),
+], className='wrapper', justify='around') 
+
+observations = dbc.Row([
     dbc.Col(
         dbc.Card([
             dbc.CardHeader([
                 dbc.Row([
-                    dbc.Col(html.H4('Finding 2'), width='auto', align='start'),
+                    dbc.Col(html.H4('Observations'), width='auto', align='start')
                 ], justify='between')
             ], className='primary-color'),
-            dbc.CardBody([
-                'Load Visualization Here!',
-            ], className='secondary-color')
-        ])
-    ),
-    dbc.Col(
-        dbc.Card([
-            dbc.CardHeader([
+            dbc.CardBody(
                 dbc.Row([
-                    dbc.Col(html.H4('Finding 3'), width='auto', align='start'), 
-                ], justify='between')
-            ], className='primary-color'),
-            dbc.CardBody([
-                'Load Visualization Here!',
-            ], className='secondary-color')
-        ])
+                    dbc.Col(
+                        html.P('The highest number of new cases for each state across the entire time series does not always correspond to the highest number of new deaths when these data are ordered in descending order. This means that some states did better or worse at mitigating potential deaths from new cases that arose.'),
+                        xs=12, sm=12, md=12, lg=4, xl=4
+                    ),
+                    dbc.Col(
+                        html.P('State funding is directly proportional to state population.'),
+                        xs=12, sm=12, md=12, lg=4, xl=4
+                    ),
+                    dbc.Col(
+                        html.P('When comparing independent variables to the dependent variables, it seems there are mostly weak linear relationships'),
+                        xs=12, sm=12, md=12, lg=4, xl=4
+                    )
+                ]), className='secondary-color')
+        ]), xs=12, sm=12, md=12, lg=12, xl=12
     ),
-], className='wrapper')             
+])
                        
 overview_layout = html.Div([
     geo_map,
-#     side_geo_map,
     findings_row,
-#     first_row_visualizations,
-#     second_row_visualizations,
+    observations,
 ], className='container-visualization-layout')
 
 
