@@ -45,7 +45,7 @@ findings_row = dbc.Row([
     dbc.Col(
         dbc.Card([
             dbc.CardBody([
-                html.Img(src='../assets/bans_per_county.png', className='img-resizing', style={'width':'100%'})
+                html.Img(src='../static/bans_per_county.png', className='img-resizing', style={'width':'100%'})
             ], className='secondary-color')
         ]), xs=12, sm=12, md=12, lg=8, xl=8
     ),

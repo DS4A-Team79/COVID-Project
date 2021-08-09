@@ -44,14 +44,14 @@ findings_row = dbc.Row([
     dbc.Col(
         dbc.Card([
             dbc.CardBody([
-                html.Img(src='../assets/estimated_pop_by_state.png', className='img-resizing', style={'width':'100%'})
+                html.Img(src='../static/estimated_pop_by_state.png', className='img-resizing', style={'width':'100%'})
             ], className='secondary-color')
         ]), xs=12, sm=12, md=12, lg=12, xl=6
     ),
     dbc.Col(
         dbc.Card([
             dbc.CardBody([
-                html.Img(src='../assets/max_new_cases_state.png', className='img-resizing', style={'width':'100%'})
+                html.Img(src='../static/max_new_cases_state.png', className='img-resizing', style={'width':'100%'})
             ], className='secondary-color')
         ]), xs=12, sm=12, md=12, lg=12, xl=6
     ),
