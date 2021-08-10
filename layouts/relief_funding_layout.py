@@ -4,6 +4,7 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
 from layouts.tableau_line_graph import tableau_line_graph
+from read_csv_from_aws import psf_2020_df, psf_2021_df, pcf_2020_df, pcf_2021_df
 
 relief_funding_visualization_colors = {
     'background': '#2A4083',
@@ -11,10 +12,15 @@ relief_funding_visualization_colors = {
 }
 
 # dataframes, one for each visualization
-per_state_funding_2020_df = pd.read_csv('../data/per_state_funding_2020.csv', index_col=False)
-per_capita_funding_2020_df = pd.read_csv('../data/per_capita_funding_2020.csv', index_col=False)
-per_state_funding_2021_df = pd.read_csv('../data/per_state_funding_2021.csv', index_col=False)
-per_capita_funding_2021_df = pd.read_csv('../data/per_capita_funding_2021.csv', index_col=False)
+# per_state_funding_2020_df = pd.read_csv('../static/per_state_funding_2020.csv', index_col=False)
+# per_capita_funding_2020_df = pd.read_csv('../static/per_capita_funding_2020.csv', index_col=False)
+# per_state_funding_2021_df = pd.read_csv('../static/per_state_funding_2021.csv', index_col=False)
+# per_capita_funding_2021_df = pd.read_csv('../static/per_capita_funding_2021.csv', index_col=False)
+per_state_funding_2020_df = psf_2020_df
+per_capita_funding_2020_df = pcf_2020_df
+per_state_funding_2021_df = psf_2021_df
+per_capita_funding_2021_df = pcf_2021_df
+
 
 # creating a bar chart for each dataframe
 per_state_fig_2020 = px.bar(per_state_funding_2020_df, x="State", y="Total Funds for 2020 (in billions)", barmode="group")
