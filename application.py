@@ -48,7 +48,7 @@ nav_dropdown_menu = dbc.DropdownMenu(
         dbc.DropdownMenuItem(app_locations[3], href='\\relief_funding'),
         dbc.DropdownMenuItem(app_locations[4], href='\\demographics', disabled=True),
         dbc.DropdownMenuItem(app_locations[5], href='\\policy_mandates'),
-        dbc.DropdownMenuItem(app_locations[6], href='\\our_journey'),
+        dbc.DropdownMenuItem(app_locations[6], href='\\our_journey', disabled=True),
 #         dbc.DropdownMenuItem(app_locations[7], href='\\about_us'),
     ],
 #     direction="left",

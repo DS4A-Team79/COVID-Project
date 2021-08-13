@@ -17,7 +17,7 @@ geo_map = dbc.Row([
                 dbc.Modal([
                     dbc.ModalHeader(html.B('GeoSpatial Map created using Tableau Desktop'),),
                     dbc.ModalBody([
-                        html.P('Explain her what data we used to create this visualization'),
+                        html.P('Data sources include John Hopkin\' University, US Census, CDC, and the US Treasury.'),
                     ]),
                     dbc.ModalFooter(dbc.Button('Close', id='close-modal-overview-geomap', className='sm-auto', n_clicks=0),)
                 ], id='modal-overview-geomap', is_open=False),
